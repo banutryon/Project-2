@@ -33,15 +33,15 @@ app.use(methodOverride('_method'))
 const pnwController = require('./controllers/pnw_controller.js')
 app.use('/tryon-experiences', pnwController)
 
-const userController = require('./controllers/users_controller.js')
-app.use('/users', userController)
-
-const sessionsController = require('./controllers/sessions_controller.js')
-app.use('/sessions', sessionsController)
+// const userController = require('./controllers/users_controller.js')
+// app.use('/users', userController)
+//
+// const sessionsController = require('./controllers/sessions_controller.js')
+// app.use('/sessions', sessionsController)
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.redirect('/tryon-experiences')
 })
 
   // Listener
