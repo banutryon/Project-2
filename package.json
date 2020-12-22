@@ -1,6 +1,9 @@
 {
   "name": "project_unit_2",
   "version": "1.0.0",
+  "engines": {
+    "node": "15.1.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -26,5 +29,7 @@
     "method-override": "^3.0.0",
     "mongoose": "^5.11.8",
     "require": "^2.4.20"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
