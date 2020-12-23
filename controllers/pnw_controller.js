@@ -5,12 +5,12 @@ const pnw = express.Router()
 // Index
 pnw.get('/', (req, res) => {
   // PNW.find({}, (error, allLocations) => {
-  //   res.render('tryon-experiences/index.ejs', {
-  //     locations: allLocations
-  //   })
-  // })
-  res.send("hello")
-})
+    res.render('index.ejs', {
+      // locations: allLocations
+    })
+  })
+  // res.send("hello")
+// })
 
 
 
