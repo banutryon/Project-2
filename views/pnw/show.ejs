@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/main.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <%- include ('../partials/nav.ejs') %>
+    </nav>
+<!-- Edit Button -->
+    <a href="/tryon-experiences/<%=location._id; %>/edit">Edit Location</a>
+<!-- =Delete Button======== -->
+    <form action="/tryon-experiences/<%=location.id%>?_method=DELETE" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+<!-- ========================= -->
+    <form action="/register" method="POST">
+      <fieldset class="info">
+        <legend>
+          <h2><%= location.name %></h2>
+        </legend>
+        <a href="/">
+        <img src=<%= location.img%>><br /></a>
+        <label for="description">Description</label>
+        <h3 id="description"><%= location.description %></h3>
+      </fieldset>
+    </form>
+  </div>
+</div>
+  </body>
+</html>

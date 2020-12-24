@@ -6,6 +6,6 @@ const pnwSchema = new mongoose.Schema({
   description: { type: String },
 })
 
-const PNW = mongoose.model('PNW', fruitSchema)
+const PNW = mongoose.model('PNW', pnwSchema)
 
 module.exports = PNW

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <%- include ('../partials/nav.ejs') %>
+    </nav>
+    <h1>Create Location</h1>
+
+    <form action="/tryon-experiences" method="POST">
+          <fieldset class="editPage">
+          <legend>Create</legend>
+          Name: <input type="text" name="name" /><br/>
+          Img: <input type="text" name="img" /><br/>
+          Description: <input type="text" name="description" /><br/>
+          </fieldset>
+          <input type="submit" name="" value="Add"/>
+        </form>
+  </body>
+</html>
