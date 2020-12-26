@@ -13,10 +13,11 @@
 
     <h1>Welcome to Tryon Experiences</h1>
     <% for(let i = 0; i < locations.length; i++) { %>
-      <h2><%=locations[i].name; %></h2>
-    <div class="container">
-      <a href="tryon-experiences/<%=locations[i].id; %>"><img src="<%=locations[i].img%>"</a>
-    </div>
+      <h2><%=locations[i].name%></h2>
+      <a href="tryon-experiences/<%=locations[i].id; %>"><img src="<%=locations[i].img%>"/></a>
+
+
+
     <% } %>
   </body>
 </html>

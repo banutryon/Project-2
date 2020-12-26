@@ -15,6 +15,13 @@ pnw.get('/', (req, res) => {
 pnw.get('/new', (req, res) => {
   res.render('pnw/new.ejs')
 })
+// ============POST New Route==================
+pnw.post('/', (req, res) => {
+  PNW.create(req.body, (error, createdLocation) => {
+    res.redirect('/tryon-experiences')
+  })
+})
+
 
 // ============Show Route==================
 pnw.get('/:index', (req, res) => {
@@ -57,7 +64,17 @@ pnw.get('/setup/seed', (req, res) => {
     [{
       name: 'Baker Lake',
       img: 'https://lh3.googleusercontent.com/UTU0257wr97HE8dQnbsXGchNoG8PGOVLd_5ORn04uWgWpYiJ2MX5tQge0EUt-YNtz8h6ZkUAwN1RI8U7TlOnL37JSZvTrX_bSg6ubsUmUOfFMx4la4mrhQPtjeEMsIfcDh5ltn8Nc1M=w2400',
-      description:'Located in the northern Cascades'
+      description:'is a lake in northern Washington state in the United States. The lake is situated in the Mount Baker-Snoqualmie National Forest and Baker River valley southwest of North Cascades National Park and is fed by the Baker River along with numerous smaller tributaries. The lake is approximately 10 miles (16 km) north of the town of Concrete, Washington.'
+    },
+    {
+      name: 'Blanca Lake',
+      img: 'https://lh3.googleusercontent.com/jNMYezRKx17P2CwGcv2lr_K1tq0zwUu8CE6YCRD6Ftgu3jHpHyBOdfrvIuFbdyZB0sXoFImbFL9bhKKVW3OFNfHYni_rKIqE518Yl0yDY8nOu_mifzb7egzerNfUN2x8SzacKwLI4mE=w2400',
+      description:'Blanca Lake nestles in a basin surrounded by Monte Cristo, Kyes and Columbia peaks, fed by the Columbia Glacier on the northwest end. The glacier’s chilly, silt-filled melt-water creates the lake’s bright turquoise green color'
+    },
+    {
+      name: 'Palouse Falls',
+      img: 'https://lh3.googleusercontent.com/0dCuQQEYnqH7pUaCSWzdBOhsBk-v_NQNt_o42mc1RGJ89mWu7PWq5xnAIwgnrB7xE2C3PTbxDCrVOZgHPqKECG-O9sgDZBCwq2-hFThHGEwQxSdfGFHPKjtOqMpwiQoZdg3RAAMyt2s=w2400',
+      description:'The Palouse Falls lie on the Palouse River, about 4 mi (6 km) upstream of the confluence with the Snake River in southeast Washington, United States. The falls are 198 ft (60 m) in height. The falls consist of an upper fall with a drop around 20 ft (6.1 m), which lies 1,000 ft (305 m) north-northwest of the main drop, and a lower fall, with a drop of 198 ft (60 m).'
     },
   ],
   (error, data) => {
