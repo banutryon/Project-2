@@ -12,15 +12,15 @@
     </nav>
     <div class="editBox">
     <h1>Edit Location</h1>
-    <form  action="tryon-experiences/<%=location.id%>?_method=PUT" method="POST">
-    </form>
+    <form  action="/tryon-experiences/<%=location.id%>?_method=PUT" method="POST">
     <fieldset class="editPage">
       <legend>Edit</legend>
       Name: <input type="text" name="name" value="<%=location.name%>" /><br />
       Image: <input type="text" name="img" value="<%=location.img%>" /><br />
       Description: <input type="text" name="description" value="<%=location.description%>" /><br />
+      <input type="submit"  value="Submit">
+
       </fieldset>
-      <input type="submit" name="" value="Submit Changes" />
     </form>
       </div>
 

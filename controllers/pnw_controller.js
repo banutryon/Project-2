@@ -2,18 +2,30 @@ const express = require('express')
 const pnw = express.Router()
 const PNW = require('../models/pnw.js')
 
+const isAuthenticated = (req, res, next) => {
+  if (req.session.currentUser) {
+    return next()
+  } else {
+    res.redirect('/sessions/new')
+  }
+}
+
 // ============Index Route==================
 pnw.get('/', (req, res) => {
   PNW.find({}, (error, allLocations) => {
     res.render('pnw/index.ejs', {
-      locations: allLocations
+      locations: allLocations,
+      currentUser: req.session.currentUser
     })
   })
 })
 
 // ============New Route==================
-pnw.get('/new', (req, res) => {
-  res.render('pnw/new.ejs')
+pnw.get('/new', isAuthenticated, (req, res) => {
+  res.render(
+    'pnw/new.ejs',
+    {currentUser: req.session.currentUser}
+  )
 })
 // ============POST New Route==================
 pnw.post('/', (req, res) => {
@@ -28,26 +40,33 @@ pnw.get('/:index', (req, res) => {
   PNW.findById (req.params.index, (err, foundLocation) => {
     res.render('pnw/show.ejs',
     {
-        location: foundLocation
+        location: foundLocation,
+        currentUser: req.session.currentUser
     });
   });
 });
 // ============Edit Route==================
-pnw.get('/:index/edit', (req, res) => {
+pnw.get('/:index/edit',isAuthenticated, (req, res) => {
   PNW.findById(req.params.index, (err, allLocation) => {
     res.render(
       'pnw/edit.ejs',
       {
-        location: allLocation
+        location: allLocation,
+        currentUser: req.session.currentUser
       });
   });
 });
 // ============Edit Put Route==================
 pnw.put('/:index', (req, res) => {
-  PNW.findByIdAndUpdate(req.params.index, req.body, {new:true}, (error, updatedModel) => {
+  PNW.findByIdAndUpdate(
+    req.params.index,
+    req.body,
+    {new:true},
+    (error, updatedModel) => {
     res.redirect('/tryon-experiences/' + req.params.index)
 
-  })
+    }
+  )
 })
 
 

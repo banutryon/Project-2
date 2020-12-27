@@ -28,16 +28,23 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(methodOverride('_method'))
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUnintialized: false
+  })
+)
 
 // Controllers
 const pnwController = require('./controllers/pnw_controller.js')
 app.use('/tryon-experiences', pnwController)
 
-// const userController = require('./controllers/users_controller.js')
-// app.use('/users', userController)
-//
-// const sessionsController = require('./controllers/sessions_controller.js')
-// app.use('/sessions', sessionsController)
+const userController = require('./controllers/users_controller.js')
+app.use('/users', userController)
+
+const sessionsController = require('./controllers/sessions_controller.js')
+app.use('/sessions', sessionsController)
 
 // Routes
 app.get('/', (req, res) => {
