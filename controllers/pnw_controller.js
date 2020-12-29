@@ -10,6 +10,8 @@ const isAuthenticated = (req, res, next) => {
   }
 }
 
+
+
 // ============Index Route==================
 pnw.get('/', (req, res) => {
   PNW.find({}, (error, allLocations) => {
@@ -19,7 +21,12 @@ pnw.get('/', (req, res) => {
     })
   })
 })
-
+// ============Home Route==================
+pnw.get('/home', (req, res) => {
+    res.render('pnw/gallery.ejs', {
+      currentUser: req.session.currentUser
+    })
+})
 // ============New Route==================
 pnw.get('/new', isAuthenticated, (req, res) => {
   res.render(
@@ -38,8 +45,7 @@ pnw.post('/', (req, res) => {
 // ============Show Route==================
 pnw.get('/:index', (req, res) => {
   PNW.findById (req.params.index, (err, foundLocation) => {
-    res.render('pnw/show.ejs',
-    {
+    res.render('pnw/show.ejs',  {
         location: foundLocation,
         currentUser: req.session.currentUser
     });

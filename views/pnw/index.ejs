@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<link rel="stylesheet" href="/main.css">
-
   <head>
     <%- include ('../partials/head.ejs') %>
     <title></title>
   </head>
   <body>
       <%- include ('../partials/nav.ejs') %>
-
-
     <h1>Welcome to Tryon Experiences</h1>
     <% for(let i = 0; i < locations.length; i++) { %>
       <h2><%=locations[i].name%></h2>
