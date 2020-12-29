@@ -1,8 +1,47 @@
 .map {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  margin: 20px;
 }
 img {
   height: 250px;
   width: 300px;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+label {
+  width: 500px;
+  margin: 0 20px;
+}
+.bottomBox {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+#description {
+  text-align: left;
+
+}
+.box2 {
+  background-color: gray;
+  height: 250px;
+  padding: 0;
+  margin: 0;
+}
+.headText {
+  font-size: 30px;
+  text-align: center;
+}
+.pText {
+  font-size: 8px;
+  color: blue;
+  text-align: center;
+}
+.carousel-caption {
+  height: 200px;
+  position: absolute;
+  margin-bottom: 210px;
 }

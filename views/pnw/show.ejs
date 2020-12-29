@@ -40,6 +40,7 @@
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navlink" href="/tryon-experiences" class="brand-logo left">Home</a>
+      <h2><%= location.name %></h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,21 +48,107 @@
   </nav>
 
   <!-- ==========Main Page=============== -->
+  <!-- ==========Carousel 1 Page=============== -->
+
   <form action="/register" method="POST">
     <fieldset class="info">
-      <legend>
-        <h2><%= location.name %></h2>
-      </legend>
-      <a href="/">
-        <img src=<%= location.img %>><br /></a>
-      <a href=<%= location.map %>>
-      <img class="map" src=<%= location.mapImg %>></a><br />
-      <label for="description">Description</label>
-      <p id="description"><%= location.description %></p>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src=<%= location.imgA %>>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src=<%= location.imgB %>>
+
+            <div class="container">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src=<%= location.imgC %>>
+            <div class="container">
+              <div class="carousel-caption text-end">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <!-- ==========Carousel 2 Page=============== -->
+
+      <div id="myCarousel" class="carousel slide box2" data-bs-ride="carousel">
+
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+
+            <div class="container ">
+              <div class="carousel-caption text-start ">
+                <h1 class="headText"><%= location.hA %></h1>
+                <p class="pText"><%= location.textA %></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="headText"><%= location.hB %></h1>
+                <p class="pText"><%= location.textB %></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1 class="headText"><%= location.hC %></h1>
+                <p class="pText"><%= location.textC %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========Bottom Box =============== -->
+      <div class="bottomBox">
+
+          <label for="description">Description:
+          <p id="description"><%= location.description %></p></label>
+          <a href=<%= location.map %>>
+            <img class="map" src=<%= location.mapImg %>></a><br />
+
+      </div>
     </fieldset>
   </form>
   </div>
   </div>
+  <form action="/tryon-experiences/<%=location.id%>?_method=DELETE" method="POST">
+    <input class="navlink" type="submit" value="Delete" class="btn-small red" />
+  </form>
+
+
+
+
 </body>
 
 </html>

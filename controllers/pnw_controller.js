@@ -88,23 +88,45 @@ pnw.get('/setup/seed', (req, res) => {
   PNW.create (
     [{
       name: 'Baker Lake',
-      img: 'https://lh3.googleusercontent.com/UTU0257wr97HE8dQnbsXGchNoG8PGOVLd_5ORn04uWgWpYiJ2MX5tQge0EUt-YNtz8h6ZkUAwN1RI8U7TlOnL37JSZvTrX_bSg6ubsUmUOfFMx4la4mrhQPtjeEMsIfcDh5ltn8Nc1M=w2400',
+      imgA: 'https://lh3.googleusercontent.com/UTU0257wr97HE8dQnbsXGchNoG8PGOVLd_5ORn04uWgWpYiJ2MX5tQge0EUt-YNtz8h6ZkUAwN1RI8U7TlOnL37JSZvTrX_bSg6ubsUmUOfFMx4la4mrhQPtjeEMsIfcDh5ltn8Nc1M=w2400',
+
+      imgB: 'https://lh3.googleusercontent.com/batwTkSrLZ7xAh6tgVK5vcjisNbbdvY-M9nuyBU1ipgzgpz6T-2qjK70JzYFsCndyyX1Fl3cPBoXchuPoj_dnO09rXXrg0QI-qvtxThY0ZwNcs8eLGJLdUtlfC3d7tRHQcpm3BQhh50=w2400',
+
+      imgC: 'https://lh3.googleusercontent.com/_GV8WO3WV9dmXo9NZYbxWuMFw2bv8Q_3A0LN0VWdOH5ffCaMsb_om9zTntS5MvwRSJifVKpKS5EZLYE-36vp84iQWlsWg3ST0Mqfo2QM_wD_A2QQ-vvmvLZ8Fk7SP48oUqCpwDxXTUs=w2400',
       mapImg: 'https://lh3.googleusercontent.com/tj93SgzvXP8262966q9miqmKoq-srJRdJ8XJ93Snes1HGfqftskwsW2-x1GLzJVh8ds8jZNBus5T-1yiIdF64OYU9FtTk1dXSzoSNmLL81BsI_a34D1bJszY46H5ABXLXXBTEXKF_U4=w2400',
       map: "https://goo.gl/maps/LdG3kBFTmVpqutcz6",
+      textA: `Explore the majestic Baker Lake from the seat of a kayak on this unforgettable 6 hour adventure.
+
+       Its stunning landscapes and abundant wildlife make it a remarkable place to seek serenity and adventure. Our route is designed to take us to the best vies Baker Lake has to offer. Paddling in total of 7 miles, we pass tranquil beaches, observe local wildlife.`,
+       textB: `Included with every adventure you is a 5 minute drone video of your day on the lake. Get views you would never see otherwise. `,
+        textC: `We can also book a campsite for you, we will set up the tents and firewood for you.`,
+        hA: `Kayak Adventures`,
+         hB: `Drone Videos included in package`,
+          hC: `Want to stay longer`,
       description:'is a lake in northern Washington state in the United States. The lake is situated in the Mount Baker-Snoqualmie National Forest and Baker River valley southwest of North Cascades National Park and is fed by the Baker River along with numerous smaller tributaries. The lake is approximately 10 miles (16 km) north of the town of Concrete, Washington.'
     },
     {
       name: 'Blanca Lake',
-      img: 'https://lh3.googleusercontent.com/jNMYezRKx17P2CwGcv2lr_K1tq0zwUu8CE6YCRD6Ftgu3jHpHyBOdfrvIuFbdyZB0sXoFImbFL9bhKKVW3OFNfHYni_rKIqE518Yl0yDY8nOu_mifzb7egzerNfUN2x8SzacKwLI4mE=w2400',
+      imgA: 'https://lh3.googleusercontent.com/jNMYezRKx17P2CwGcv2lr_K1tq0zwUu8CE6YCRD6Ftgu3jHpHyBOdfrvIuFbdyZB0sXoFImbFL9bhKKVW3OFNfHYni_rKIqE518Yl0yDY8nOu_mifzb7egzerNfUN2x8SzacKwLI4mE=w2400',
       mapImg: 'https://lh3.googleusercontent.com/H41Pa3qimYRsdoEvDgpbzcaXh2jh9OWW5durBIldWmArPs61g0diHvV74REx9-Q25M6OP2ud7g-HE_JHd7_TswM6nHtzk8KMM8vDULJ2-VuVgxKr6oDSQlP5O3eu0c9Yi-YlOeo1_kI=w2400',
       map: 'https://goo.gl/maps/9WEJxMzcaNP9Leb98',
+      textA: `Take a `,
+       textB: ``,
+        textC: ``,
+        hA: `Kayak Adventures`,
+         hB: `Drone Videos included in package`,
+          hC: `Want to stay longer`,
       description:'nestles in a basin surrounded by Monte Cristo, Kyes and Columbia peaks, fed by the Columbia Glacier on the northwest end. The glacier’s chilly, silt-filled melt-water creates the lake’s bright turquoise green color'
     },
     {
       name: 'Palouse Falls',
-      img: 'https://lh3.googleusercontent.com/0dCuQQEYnqH7pUaCSWzdBOhsBk-v_NQNt_o42mc1RGJ89mWu7PWq5xnAIwgnrB7xE2C3PTbxDCrVOZgHPqKECG-O9sgDZBCwq2-hFThHGEwQxSdfGFHPKjtOqMpwiQoZdg3RAAMyt2s=w2400',
+      imgA: 'https://lh3.googleusercontent.com/0dCuQQEYnqH7pUaCSWzdBOhsBk-v_NQNt_o42mc1RGJ89mWu7PWq5xnAIwgnrB7xE2C3PTbxDCrVOZgHPqKECG-O9sgDZBCwq2-hFThHGEwQxSdfGFHPKjtOqMpwiQoZdg3RAAMyt2s=w2400',
+
       mapImg: 'https://lh3.googleusercontent.com/tiSmEiBs-uv3WTVZU6ZGbAJ4_ZrbsPQV_1Plah8irUGQXK2-J6qtzlfG8CptdcCz7qeD69G69dpy6NHzH0SK8vojq2VxzxrUTsTXAtE2yLm3HK8_k-x8mJauvfA5YP-93Nd-wjAs_YA=w2400',
       map: 'https://goo.gl/maps/DgyW44a1MuWMf4zs6',
+      textA: ``,
+       textB: ``,
+        textC: ``,
       description:'lie on the Palouse River, about 4 mi (6 km) upstream of the confluence with the Snake River in southeast Washington, United States. The falls are 198 ft (60 m) in height. The falls consist of an upper fall with a drop around 20 ft (6.1 m), which lies 1,000 ft (305 m) north-northwest of the main drop, and a lower fall, with a drop of 198 ft (60 m).'
     },
   ],
