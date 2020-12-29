@@ -23,7 +23,7 @@ pnw.get('/', (req, res) => {
 })
 // ============Home Route==================
 pnw.get('/home', (req, res) => {
-    res.render('pnw/gallery.ejs', {
+    res.render('pnw/home.ejs', {
       currentUser: req.session.currentUser
     })
 })

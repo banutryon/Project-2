@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <%- include ('../partials/head.ejs') %>
-    <title></title>
-  </head>
-  <body>
-      <%- include ('../partials/nav.ejs') %>
-    <h1>Welcome to Tryon Experiences</h1>
-    <% for(let i = 0; i < locations.length; i++) { %>
-      <h2><%=locations[i].name%></h2>
-      <a href="tryon-experiences/<%=locations[i].id; %>"><img src="<%=locations[i].img%>"/></a>
+<head>
+  <%- include ('../partials/head.ejs') %>
+  <title></title>
+</head>
 
-    <% } %>
-  </body>
+<body>
+  <%- include ('../partials/nav.ejs') %>
+  <% if (currentUser) { %>
+  <h1>Welcome to Tryon Experiences <%= currentUser.username %></h1>
+  <% } else { %>
+    <h1>Welcome to Tryon Experiences %></h1>
+  <% } %>
+  <div class="container">
+
+      <% for(let i = 0; i < locations.length; i++) { %>
+        <div class="gallery">
+      <a href="tryon-experiences/<%=locations[i].id; %>"><img src="<%=locations[i].img%>" /></a>
+      <h4 class= "name"><%=locations[i].name%></h4><br />
+      </div>
+      <% } %>
+
+  </div>
+</body>
+
 </html>
