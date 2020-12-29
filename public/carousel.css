@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
@@ -60,40 +60,17 @@ body {
 .featurette-divider {
   margin: 5rem 20px; /* Space out the Bootstrap <hr> more */
 }
-#Baker,#Blanca, #Palouse {
- margin-left: 20px;
-}
-#Blanca {
-  flex-direction: row-reverse;
-}
 
-.image a,.image{
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-
-
-}
-
-.image a, .image {
-  width: 100%;
-    height: auto;
-    transform: scale(1.1);
-    transition: transform 0.5s, opacity 0.5s;
-    opacity: 0.8;
-}
-.image a:hover, .image:hover {
-  transform: scale(1.03);
-      opacity: 1;
-}
 
 
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
+  font-size: 30px;
   /* rtl:remove */
   letter-spacing: -.05rem;
+  align-items: center;
 }
 
 
@@ -109,8 +86,9 @@ body {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 30px;
   }
+
 }
 
 @media (min-width: 62em) {

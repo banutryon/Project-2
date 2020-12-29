@@ -2,34 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.79.0">
+<title>Gallery</title>
   <%- include ('../partials/head.ejs') %>
-  <title>Gallery</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
+  <%- include ('../partials/boot.ejs') %>
   <link rel="stylesheet" href="/carousel.css">
+  <link rel="stylesheet" href="/index.css">
 
 </head>
 
@@ -48,7 +26,7 @@
   <div class="row featurette block" id=<%=locations[i].name%>>
     <div class="col-md-7" >
       <h2 class="featurette-heading"><%=locations[i].name%></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <p><%=locations[i].description%></p>
 
     </div>
     <div class="col-md-5 image">

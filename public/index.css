@@ -1,0 +1,55 @@
+.name {
+ color: black;
+ text-shadow: 1px 2px 2px #567A58;
+}
+
+label {
+  font-size: 25px;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+p {
+  font-size: 12px;
+
+}
+.col-md-7 {
+  padding: 60px;
+}
+
+/* Image controls */
+#Baker,#Blanca, #Palouse {
+ margin-left: 15px;
+ padding: 10px;
+}
+#Blanca {
+  flex-direction: row-reverse;
+}
+/* .col-md-5 {
+width: 300px;
+} */
+img {
+  height: 250px;
+  width: 300px;
+}
+.image {
+  height: 250px;
+  width: 300px;
+  border-radius: 2px;
+  padding: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+.image img  {
+width: 100%;
+transition: 0.5s all ease-in-out;
+border-radius: 2px;
+
+}
+.image:hover img {
+transform: scale(1.5);
+border-radius: 2px;
+
+}

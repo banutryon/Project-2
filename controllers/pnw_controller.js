@@ -98,14 +98,14 @@ pnw.get('/setup/seed', (req, res) => {
       img: 'https://lh3.googleusercontent.com/jNMYezRKx17P2CwGcv2lr_K1tq0zwUu8CE6YCRD6Ftgu3jHpHyBOdfrvIuFbdyZB0sXoFImbFL9bhKKVW3OFNfHYni_rKIqE518Yl0yDY8nOu_mifzb7egzerNfUN2x8SzacKwLI4mE=w2400',
       mapImg: 'https://lh3.googleusercontent.com/H41Pa3qimYRsdoEvDgpbzcaXh2jh9OWW5durBIldWmArPs61g0diHvV74REx9-Q25M6OP2ud7g-HE_JHd7_TswM6nHtzk8KMM8vDULJ2-VuVgxKr6oDSQlP5O3eu0c9Yi-YlOeo1_kI=w2400',
       map: 'https://goo.gl/maps/9WEJxMzcaNP9Leb98',
-      description:'Blanca Lake nestles in a basin surrounded by Monte Cristo, Kyes and Columbia peaks, fed by the Columbia Glacier on the northwest end. The glacier’s chilly, silt-filled melt-water creates the lake’s bright turquoise green color'
+      description:'nestles in a basin surrounded by Monte Cristo, Kyes and Columbia peaks, fed by the Columbia Glacier on the northwest end. The glacier’s chilly, silt-filled melt-water creates the lake’s bright turquoise green color'
     },
     {
       name: 'Palouse Falls',
       img: 'https://lh3.googleusercontent.com/0dCuQQEYnqH7pUaCSWzdBOhsBk-v_NQNt_o42mc1RGJ89mWu7PWq5xnAIwgnrB7xE2C3PTbxDCrVOZgHPqKECG-O9sgDZBCwq2-hFThHGEwQxSdfGFHPKjtOqMpwiQoZdg3RAAMyt2s=w2400',
       mapImg: 'https://lh3.googleusercontent.com/tiSmEiBs-uv3WTVZU6ZGbAJ4_ZrbsPQV_1Plah8irUGQXK2-J6qtzlfG8CptdcCz7qeD69G69dpy6NHzH0SK8vojq2VxzxrUTsTXAtE2yLm3HK8_k-x8mJauvfA5YP-93Nd-wjAs_YA=w2400',
       map: 'https://goo.gl/maps/DgyW44a1MuWMf4zs6',
-      description:'The Palouse Falls lie on the Palouse River, about 4 mi (6 km) upstream of the confluence with the Snake River in southeast Washington, United States. The falls are 198 ft (60 m) in height. The falls consist of an upper fall with a drop around 20 ft (6.1 m), which lies 1,000 ft (305 m) north-northwest of the main drop, and a lower fall, with a drop of 198 ft (60 m).'
+      description:'lie on the Palouse River, about 4 mi (6 km) upstream of the confluence with the Snake River in southeast Washington, United States. The falls are 198 ft (60 m) in height. The falls consist of an upper fall with a drop around 20 ft (6.1 m), which lies 1,000 ft (305 m) north-northwest of the main drop, and a lower fall, with a drop of 198 ft (60 m).'
     },
   ],
   (error, data) => {

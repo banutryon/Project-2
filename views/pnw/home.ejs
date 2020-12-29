@@ -3,13 +3,21 @@
 
 
   <head>
-    <%- include ('../partials/head.ejs') %>
+  <%- include ('../partials/head.ejs') %>
+    <%- include ('../partials/boot.ejs') %>
+    <link rel="stylesheet" href="/carousel.css">
+    <link rel="stylesheet" href="/main.css">
+
     <title></title>
   </head>
   <body>
       <%- include ('../partials/nav.ejs') %>
 
-    <h1>Welcome to Tryon Experiences</h1>
-  
+      <% if (currentUser) { %>
+      <h1>Welcome to Tryon Experiences <%= currentUser.username %></h1>
+      <% } else { %>
+      <h1>Welcome to Tryon Experiences %></h1>
+      <% } %>
+
   </body>
 </html>
