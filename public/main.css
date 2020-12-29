@@ -1,8 +1,9 @@
 img {
   height: 180px;
-  width: 320px;
+  width: 300px;
   border-radius: 2px;
 }
+
 .map {
   width: 120px;
   height: 120px;
@@ -12,13 +13,13 @@ label {
 }
 h1 {
   text-align: center;
-  margin: 20px;
+  padding-top: 20px;
 }
-.name {
+ .name {
   color: black;
   text-shadow: 1px 2px 2px #567A58;
 }
-
+/*
 .gallery {
   background: linear-gradient(45deg, #567A58 0%, #445847 43%, #718171 100%);
   box-shadow: 2px 2px 7px 1px #567A58;
@@ -33,4 +34,4 @@ h1 {
   justify-content: space-between;
 
 
-}
+} */

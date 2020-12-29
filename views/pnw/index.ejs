@@ -2,8 +2,35 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
   <%- include ('../partials/head.ejs') %>
-  <title></title>
+  <title>Gallery</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="/carousel.css">
+
 </head>
 
 <body>
@@ -11,18 +38,25 @@
   <% if (currentUser) { %>
   <h1>Welcome to Tryon Experiences <%= currentUser.username %></h1>
   <% } else { %>
-    <h1>Welcome to Tryon Experiences %></h1>
+  <h1>Welcome to Tryon Experiences %></h1>
   <% } %>
-  <div class="container">
 
-      <% for(let i = 0; i < locations.length; i++) { %>
-        <div class="gallery">
-      <a href="tryon-experiences/<%=locations[i].id; %>"><img src="<%=locations[i].img%>" /></a>
-      <h4 class= "name"><%=locations[i].name%></h4><br />
+  <!-- START THE FEATURETTES -->
+  <% for(let i = 0; i < locations.length; i++) { %>
+  <hr class="featurette-divider">
+
+  <div class="row featurette block" id=<%=locations[i].name%>>
+    <div class="col-md-7" >
+      <h2 class="featurette-heading"><%=locations[i].name%></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+    </div>
+    <div class="col-md-5 image">
+        <a href="tryon-experiences/<%=locations[i].id %>"><img src="<%=locations[i].img%>" /></a>
       </div>
-      <% } %>
-
   </div>
+  <% } %>
+
 </body>
 
 </html>
