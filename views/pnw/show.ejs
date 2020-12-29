@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
-    <link rel="stylesheet" href="/main.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <nav>
-      <%- include ('../partials/nav.ejs') %>
-    </nav>
-<!-- Edit Button -->
-    <a href="/tryon-experiences/<%=location._id%>/edit">Edit Location</a>
-<!-- =Delete Button======== -->
-    <form action="/tryon-experiences/<%=location.id%>?_method=DELETE" method="POST">
-              <button type="submit">Delete</button>
-            </form>
-<!-- ========================= -->
-    <form action="/register" method="POST">
-      <fieldset class="info">
-        <legend>
-          <h2><%= location.name %></h2>
-        </legend>
-        <a href="/">
-        <img src=<%= location.img%>><br /></a>
-        <label for="description">Description</label>
-        <h3 id="description"><%= location.description %></h3>
-      </fieldset>
-    </form>
+<head>
+  <%- include ('../partials/boot.ejs') %>
+  <link rel="stylesheet" href="/nav.css">
+  <link rel="stylesheet" href="/main.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+
+      <% if (currentUser) { %>
+      <h4>Welcome <%= currentUser.username %></h4>
+      <a class="navlink" href="/tryon-experiences/new">Create a new Location</a>
+      <a class="navlink" href="/tryon-experiences/setup/seed">Seed</a>
+      <!-- Edit Button -->
+      <a class="navlink" href="/tryon-experiences/<%=location._id%>/edit">Edit Location</a>
+      <!-- =Delete Button======== -->
+      <form action="/tryon-experiences/<%=location.id%>?_method=DELETE" method="POST">
+        <input class="navlink" type="submit" value="Delete" class="btn-small red" />
+      </form>
+      <!-- =LogOut Button======== -->
+      <form action="/sessions?_method=DELETE" method="POST">
+        <input class="navlink" type="submit" value="Log Out" class="btn-small red" />
+      </form>
+      <% } else { %>
+      <a class="navlink" href="/users/new">Sign Up</a>
+      <a class="navlink" href="/sessions/new">Log In</a>
+      <style>
+      .p-4 { height: 100px; }
+      </style>
+      <% } %>
+    </div>
   </div>
-</div>
-  </body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navlink" href="/tryon-experiences" class="brand-logo left">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================= -->
+  <form action="/register" method="POST">
+    <fieldset class="info">
+      <legend>
+        <h2><%= location.name %></h2>
+      </legend>
+      <a href="/">
+        <img src=<%= location.img %>><br /></a>
+      <a href=<%= location.map %>>
+      <img class="map" src=<%= location.mapImg %>></a><br />
+      <label for="description">Description</label>
+      <p id="description"><%= location.description %></p>
+    </fieldset>
+  </form>
+  </div>
+  </div>
+</body>
+
 </html>

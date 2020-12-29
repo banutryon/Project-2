@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <%- include ('../partials/head.ejs') %>
+    <%- include ('../partials/user_session.ejs') %>
   </head>
-  <body>
-    <nav>
-      <%- include ('../partials/nav.ejs') %>
-    </nav>
-    <div class="container">
-      <h1>Log In</h1>
+  <body class="text-center">
+    <main class="form-signin">
       <form action="/sessions" method="POST">
-        <label for="name">User Name:</label>
-        <input type="text" name="username" required/>
-        <label for="color">Password:</label>
-        <input type="password" name="password" />
+        <img class="mb-4" src="https://lh3.googleusercontent.com/yD1Uu2ncet06865FqtAii_a4JvWzRlSdHHHbKCCzF_u83nQ9vrFYxnUH5AUa4vLrU50YYBkmddDw4B4zp-qX41fkoIbILGjg7KeQMLzJLBXgi1KUoHQBtRqW1UA6GIzf_STkp-jG9_w=w2400" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please login</h1>
+        <label for="name"></label>
+        <input type="text" class="form-control" placeholder="username" name="username" required />
+        <label for="password"></label>
+        <input type="password" class="form-control" placeholder="Password" name="password" />
         <br>
-        <input type="submit" value="Submit">
-      <form>
-    </div>
+
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <input class="w-100 btn btn-lg btn-primary" type="submit" value="Submit">
+      </form>
+      <a href="/tryon-experiences">Cancel</a>
+      <p class="mt-5 mb-3 text-muted">&copy; 1983-2020</p>
+
+    </main>
   </body>
 </html>

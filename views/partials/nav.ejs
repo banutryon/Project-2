@@ -3,48 +3,47 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <%- include ('../partials/boot.ejs') %>
 
-  <!-- JavaScript Bundle with Popper -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/nav.css">
 
   <title></title>
-<head>
 
-</head>
+  <head>
+  </head>
 
 <body>
-<header>
-
-
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <a class="navlink" href="/tryon-experiences" class="brand-logo left">Home</a>
-      <% if (currentUser) { %>
-      <h4>Welcome <%= currentUser.username %></h4>
-      <form action="/sessions?_method=DELETE" method="POST">
-        <input class="logOut" type="submit" value="Log Out" class="btn-small red" />
-      </form>
-      <% } else { %>
-      <a class="navlink" href="/users/new">Sign Up</a>
-      <a class="navlink" href="/sessions/new">Log In</a>
-      <% } %>
-
-      <a class="navlink" href="/tryon-experiences/new">Create a new Location</a>
-      <a class="navlink" href="/tryon-experiences/setup/seed">Seed</a>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <% if (currentUser) { %>
+        <h4>Welcome <%= currentUser.username %></h4>
+        <a class="navlink" href="/tryon-experiences/new">Create a new Location</a>
+        <a class="navlink" href="/tryon-experiences/setup/seed">Seed</a>
+        <form action="/sessions?_method=DELETE" method="POST">
+          <input class="navlink"  type="submit" value="Log Out" class="btn-small red" />
+        </form>
+        <style>
+        .p-4 { height: 180px; }
+        </style>
+        <% } else { %>
+        <a class="navlink" href="/users/new">Sign Up</a>
+        <a class="navlink" href="/sessions/new">Log In</a>
+        <style>
+        .p-4 { height: 100px; }
+        </style>
+        <% } %>
+      </div>
     </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-</header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navlink" href="/tryon-experiences" class="brand-logo left">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+
 
 
 </body>

@@ -1,32 +1,26 @@
-.logOut, .navlink {
-  color: white;
-  font-size: 20px;
-}
 
-.logOut {
-  cursor: pointer;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  padding: 0;
-}
-.logOut:hover{
+.navlink:hover{
   color: lightgreen;
 }
 .navlink {
   text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  color: white;
+  font-size: 20px;
 }
+a {
+  width: 200px;
+}
+
 
 h4 {
   color: white;
   padding: 5px;
+  text-align: center;
 }
-.navbar-toggler-icon {
-
-}
-
-
-
 
 .p-4 {
   display: flex;
@@ -35,9 +29,5 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 250px;
-
-}
-
-.bg-dark {
 
 }

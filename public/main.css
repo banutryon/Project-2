@@ -2,6 +2,10 @@ img {
   height: 350px;
   width: 500px;
 }
-body {
-
+.map {
+  width: 120px;
+  height: 120px;
+}
+label {
+  font-size: 25px;
 }
