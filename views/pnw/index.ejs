@@ -13,10 +13,11 @@
 
 <body>
   <%- include ('../partials/nav.ejs') %>
+
   <% if (currentUser) { %>
-  <h1>Welcome to Tryon Experiences <%= currentUser.username %></h1>
+  <h1 class="title">Welcome to Tryon Experiences <%= currentUser.username %></h1>
   <% } else { %>
-  <h1>Welcome to Tryon Experiences %></h1>
+  <h1 class="title">Welcome to Tryon Experiences %></h1>
   <% } %>
 
   <!-- START THE FEATURETTES -->

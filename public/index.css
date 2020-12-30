@@ -3,20 +3,18 @@
  text-shadow: 1px 2px 2px #567A58;
 }
 
-label {
-  font-size: 25px;
-}
-h1 {
+
+.title {
   text-align: center;
   padding-top: 20px;
+  font-size: 30px;
 }
+
 p {
   font-size: 12px;
 
 }
-.col-md-7 {
-  padding: 60px;
-}
+
 
 /* Image controls */
 #Baker,#Blanca, #Palouse {
@@ -51,5 +49,10 @@ border-radius: 2px;
 .image:hover img {
 transform: scale(1.5);
 border-radius: 2px;
+}
 
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
 }
