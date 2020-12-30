@@ -32,7 +32,9 @@
       <a class="navlink" href="/users/new">Sign Up</a>
       <a class="navlink" href="/sessions/new">Log In</a>
       <style>
-      .p-4 { height: 100px; }
+        .p-4 {
+          height: 100px;
+        }
       </style>
       <% } %>
     </div>
@@ -132,11 +134,14 @@
       <!-- ==========Bottom Box =============== -->
       <div class="bottomBox">
 
-          <label for="description">Description:
-          <p id="description"><%= location.description %></p></label>
-          <a href=<%= location.map %>>
-            <img class="map" src=<%= location.mapImg %>></a><br />
+        <label for="description">Description:
+          <p id="description"> <%= location.description %></p>
+        </label>
+        <div class="map">
 
+
+          <a href=<%= location.map %>><img src=<%= location.mapImg %>></a>
+        </div>
       </div>
     </fieldset>
   </form>

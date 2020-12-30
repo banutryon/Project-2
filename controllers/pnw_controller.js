@@ -143,8 +143,8 @@ pnw.get('/setup/seed', (req, res) => {
       imgB: 'https://lh3.googleusercontent.com/X31wqIvCeOi98gp63BPRj4NTdw4QH0TXjnnJClCHmUw_Rkh51ZX9-Tb3_Zj5_I3cBpBD7jRHUiJCnOSMu8Kb1cmcnich9pkt53VDckqfKRCe5FZPp6RAwetRAzYw8t8JMVTJdn_F89M=w2400',
       imgC: 'https://lh3.googleusercontent.com/KsyR0E20Q0I_yBgZV6ClDuXHV5NXoTPio_-p9P38YCo_dZ3RshkLE_OU3mBbehv56oxk7l3lFesBV2K60ivjqPORxBilXMnzgzpUqsQQYzz59yjAiJeF5xtlNJdDH68y1yP-DPTNRj8=w2400',
 
-      mapImg: 'https://lh3.googleusercontent.com/tiSmEiBs-uv3WTVZU6ZGbAJ4_ZrbsPQV_1Plah8irUGQXK2-J6qtzlfG8CptdcCz7qeD69G69dpy6NHzH0SK8vojq2VxzxrUTsTXAtE2yLm3HK8_k-x8mJauvfA5YP-93Nd-wjAs_YA=w2400',
-      map: 'https://goo.gl/maps/DgyW44a1MuWMf4zs6',
+      mapImg: 'https://lh3.googleusercontent.com/0q5Ff9A1XU95H1FlPIj5ZFZWcNAwyu4K-_EuxHBVTju-Ip4VX0i770M0CvehEn7FHDnPLHY3AnlYwcOmI3YbbPs72q91Hw1yjl0T59un51pIXx8ie--AHXHBKXHeBHyc_8Ci_fHDhbk=w2400',
+      map: 'https://goo.gl/maps/zkqyc4AXY5zfMg349',
       textA: `The best way to explore Crater Lake is by boat! Learn about history, culture and geology of this amazing park and get amazing panoramic views from Wizard Island.`,
        textB: `Connect with nature - biking, hiking, fishing & lake views! Book now with confidence, safety and flexibility are our priority. Book Direct. Official Site. Special Offers.`,
         textC: `An ideal way to explore the magnificent landscape of Crater Lake National Park. You’ll find a hike to suit your pace and experience.`,

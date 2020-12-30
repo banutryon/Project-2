@@ -1,27 +1,23 @@
 .name {
  color: black;
  text-shadow: 1px 2px 2px #567A58;
+ padding-top: 60px;
 }
-
-
 .title {
   text-align: center;
   padding-top: 20px;
   font-size: 30px;
 }
-
 p {
   font-size: 12px;
-
 }
 
-
 /* Image controls */
-#Baker,#Blanca, #Palouse {
+#Baker,#Blanca, #Palouse, #Crater {
  margin-left: 15px;
  padding: 10px;
 }
-#Blanca {
+#Blanca, #Crater {
   flex-direction: row-reverse;
 }
 /* .col-md-5 {
@@ -30,6 +26,7 @@ width: 300px;
 img {
   height: 250px;
   width: 300px;
+
 }
 .image {
   height: 250px;
@@ -38,6 +35,7 @@ img {
   padding: 10px;
   overflow: hidden;
   margin: 0 auto;
+
 
 }
 .image img  {
