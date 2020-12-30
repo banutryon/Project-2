@@ -3,3 +3,82 @@
   padding: 15px;
   width: 200px;
 }
+
+:root {
+  --tesla-red: #DA1834;
+  --cyber-silver: #656B7D;
+  --tesla-blue: #001A7C;
+  --tesla-lightblue: #9bd4ff;
+
+}
+
+header {
+  background-color: black;
+  display: block;
+  text-align: center;
+}
+header img {
+  height: 10em;
+  width: 25em;
+  margin: 0 auto;
+  text-align: center;
+
+}
+ .editBox {
+
+}
+
+.editPage {
+  font-size: 25px;
+  width: 70vw;
+  height: 34rem;
+  margin: 10px auto;
+  border-radius: 10px;
+
+}
+
+.editBox {
+  width: 90vw;
+  height: 1000px;
+  margin: 10px auto;
+
+      box-shadow: 1px 1px 10px var(--cyber-silver);
+                  -1px -1px 10px var(--cyber-silver);
+                  1px -1px 10px var(--cyber-silver);
+                  -1px 1px 10px var(--cyber-silver);
+}
+h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--tesla-blue);
+}
+
+
+/*========= Focus======== */
+
+input:focus {
+  outline: 0;
+  border: 1px solid var(--tesla-lightblue);
+}
+
+input[type="submit"] {
+  height: 50px;
+  background: var(--tesla-red);
+  box-shadow: 2px 2px var(--cyber-silver);
+  font-size: 1.3em;
+  color: whitesmoke;
+  border: 0px;
+  transition: .2s ease-in-out;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: var(--cyber-silver);
+  box-shadow: var(--tesla-red);
+}
