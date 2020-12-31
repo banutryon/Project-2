@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <%- include ('../partials/head.ejs') %>
     <link rel="stylesheet" href="/edit.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tryon Experiences</title>
+    <title>Tryon Experiences Edit Page</title>
   </head>
+
   <body>
     <nav>
       <%- include ('../partials/nav.ejs') %>
@@ -14,16 +16,17 @@
     <h1>Edit Location</h1>
     <form  action="/tryon-experiences/<%=location.id%>?_method=PUT" method="POST">
     <fieldset class="editPage">
-      <legend></legend>
-      Name: <input type="text" name="name" value="<%=location.name%>" /><br />
-      ImageA: <input type="text" name="imgA" value="<%=location.imgA%>" /><br />
-      ImageB: <input type="text" name="imgB" value="<%=location.imgA%>" /><br />
-      ImageC: <input type="text" name="imgC" value="<%=location.imgA%>" /><br />
-      TextA: <input type="text" name="textA" value="<%=location.textA%>" /><br />
-      TextB: <input type="text" name="textB" value="<%=location.textB%>" /><br />
-      TextC: <input type="text" name="textC" value="<%=location.textC%>" /><br />
-      Description: <input type="text" name="description" value="<%=location.description%>" /><br />
-      <input type="submit"  value="Submit">
+
+      <p>Name:</p><input type="text" name="name" value="<%=location.name%>" />
+      <p>ImageA:</p> <input type="text" name="imgA" value="<%=location.imgA%>" />
+      <p>ImageB:</p> <input type="text" name="imgB" value="<%=location.imgA%>" />
+      <p>ImageC:</p> <input type="text" name="imgC" value="<%=location.imgA%>" />
+      <p>TextA:</p> <input type="text" name="textA" value="<%=location.textA%>" />
+      <p>TextB:</p> <input type="text" name="textB" value="<%=location.textB%>" />
+      <p>TextC:</p> <input type="text" name="textC" value="<%=location.textC%>" />
+      <p Class="description">Description:</p><br /><textarea  name="description" rows="4" ><%=location.description%></textarea>
+
+      <input class="Submit" type="submit"  value="Submit">
 
       </fieldset>
     </form>

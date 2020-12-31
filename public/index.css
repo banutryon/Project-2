@@ -10,6 +10,9 @@
 p {
   font-size: 12px;
 }
+body {
+  background-color: #f5f5f5
+}
 
 /* Image controls */
 #Baker,#Blanca, #Palouse, #Crater, #Diablo, #Mt, #New, #Mount, #Oregon  {

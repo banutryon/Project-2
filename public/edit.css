@@ -1,84 +1,102 @@
-.des {
-  box-sizing: border-box;
-  padding: 15px;
-  width: 200px;
-}
 
 :root {
-  --tesla-red: #DA1834;
-  --cyber-silver: #656B7D;
-  --tesla-blue: #001A7C;
-  --tesla-lightblue: #9bd4ff;
+  --Melon: rgba(248, 194, 145,.90);
+  --dupain: rgba(96, 163, 188,.90);
+  --offWhite: #f5f5f5;
+  --Green: rgba(146, 159,141 ,0.50);
 
 }
-
-header {
-  background-color: black;
-  display: block;
-  text-align: center;
-}
-header img {
-  height: 10em;
-  width: 25em;
-  margin: 0 auto;
-  text-align: center;
-
-}
- .editBox {
-
+* {
+  font-family: 'Oxygen', sans-serif;
 }
 
+legend {
+  font-size: 30px;
+}
 .editPage {
   font-size: 25px;
-  width: 70vw;
-  height: 34rem;
+  width: 80vw;
+  height: 60rem;
   margin: 10px auto;
   border-radius: 10px;
 
 }
+body {
+  background-image: url("https://lh3.googleusercontent.com/Z2G_QKBeIFTeDvTUaTJlnGAap69dHgNhFtp_cW99lHb3bX5zj3SGGc3c8u8c68tkdH-NHfGz6lSaWUlLdlP9tMjlSPaRMgaAioFM46qO9GXwz7ByTsfJyqlmFzYWEpRvgYc7t4nUvF8=w2400");
+  background-position: center;
 
+}
 .editBox {
   width: 90vw;
-  height: 1000px;
+  height: 1300px;
   margin: 10px auto;
-
-      box-shadow: 1px 1px 10px var(--cyber-silver);
-                  -1px -1px 10px var(--cyber-silver);
-                  1px -1px 10px var(--cyber-silver);
-                  -1px 1px 10px var(--cyber-silver);
+  border-radius: 20px;
+      box-shadow: 1px 1px 12px var(--offWhite);
+                  -1px -1px 12px var(--offWhite);
+                  1px -1px 12px var(--offWhite);
+                  -1px 1px 12px var(--offWhite);
 }
 h1 {
   text-align: center;
   padding-top: 40px;
+  color: var(--offWhite);
+}
+p {
+  color: var(--offWhite);
+  padding-top: 15px;
+  font-size: 24px;
+  margin: none;
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  padding-bottom: 0;
 }
 
 input {
   width: 100%;
   margin: 8px 0;
-  padding: 8px;
   box-sizing: border-box;
-  border: 1px solid var(--tesla-blue);
+  border: 2px solid var(--Green);
+  background-color: var(--Green)
 }
 
+/*========= Edit Text======== */
+textarea {
+height: 200px;
+width: 100%;
+box-sizing: border-box;
+padding-left: 10px;
+background-color: rgba(146, 159,141 ,0.70)
+}
+/*========= Submit Button======== */
+.Submit {
+  width: 40%;
+  margin: 40px auto;
+  display: block;
+  border-radius: 10px;
+
+}
 
 /*========= Focus======== */
 
 input:focus {
   outline: 0;
-  border: 1px solid var(--tesla-lightblue);
+  border: 2px solid var(--Melon);
+
 }
 
 input[type="submit"] {
   height: 50px;
-  background: var(--tesla-red);
-  box-shadow: 2px 2px var(--cyber-silver);
-  font-size: 1.3em;
-  color: whitesmoke;
+  background: var(--dupain);
+  box-shadow: 2px 2px var(--Melon);
+  color: black);
   border: 0px;
   transition: .2s ease-in-out;
 }
 input[type="submit"]:hover {
   cursor: pointer;
-  background: var(--cyber-silver);
-  box-shadow: var(--tesla-red);
+  background: var(--Melon);
+  box-shadow:2px 2px var(--dupain);
+  color: black;
 }

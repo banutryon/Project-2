@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <%- include ('../partials/boot.ejs') %>
-
+    <%- include ('../partials/head.ejs') %>
     <link rel="stylesheet" href="/edit.css">
-
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tryon Experiences New Page</title>
   </head>
   <body>
     <nav>
       <%- include ('../partials/nav.ejs') %>
     </nav>
+    <div class="editBox">
     <h1>Create Location</h1>
 
     <form action="/tryon-experiences" method="POST">
           <fieldset class="editPage">
-          <legend>Create</legend>
-          Name: <input type="text" name="name" /><br/>
-          Img: <input type="text" name="img" /><br/>
-          Description: <textarea name="description" rows="4" cols="40"></textarea><br/>
+            <p>Name:</p><input type="text" name="name" />
+            <p>ImageA:</p> <input type="text" name="imgA" />
+            <p>ImageB:</p> <input type="text" name="imgB" />
+            <p>ImageC:</p> <input type="text" name="imgC" />
+            <p>TextA:</p> <input type="text" name="textA" />
+            <p>TextB:</p> <input type="text" name="textB" />
+            <p>TextC:</p> <input type="text" name="textC" />
+            <p Class="description">Description:</p><br /><textarea  name="description" rows="4" ></textarea>
+            <input class="Submit" type="submit" name="" value="Add"/>
           </fieldset>
-          <input type="submit" name="" value="Add"/>
+
         </form>
+      </div>
   </body>
 </html>
