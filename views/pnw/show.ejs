@@ -102,8 +102,7 @@
       <div id="myCarousel" class="carousel slide box2" data-bs-ride="carousel">
 
         <div class="carousel-inner ">
-          <div class="carousel-item active ">
-
+          <div class="carousel-item active wordBox ">
             <div class="container ">
               <div class="carousel-caption text-start ">
                 <h1 class="headText"><%= location.hA %></h1>
@@ -111,8 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-
+          <div class="carousel-item wordBox">
             <div class="container">
               <div class="carousel-caption">
                 <h1 class="headText"><%= location.hB %></h1>
@@ -120,7 +118,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item wordBox">
             <div class="container">
               <div class="carousel-caption text-end">
                 <h1 class="headText"><%= location.hC %></h1>
@@ -139,17 +137,14 @@
         </label>
         <div class="map">
 
-
-          <a href=<%= location.map %>><img src=<%= location.mapImg %>></a>
+          <a href="<%= location.map %>"><img src=<%= location.mapImg %> /></a>
         </div>
       </div>
     </fieldset>
   </form>
   </div>
   </div>
-  <form action="/tryon-experiences/<%=location.id%>?_method=DELETE" method="POST">
-    <input class="navlink" type="submit" value="Delete" class="btn-small red" />
-  </form>
+  
 
 
 

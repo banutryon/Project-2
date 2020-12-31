@@ -11,7 +11,6 @@ const pnwSchema = new mongoose.Schema({
   hA: { type: String },
   hB: { type: String },
   hC: { type: String },
-
   mapImg: { type: String },
   map: { type: String },
   description: { type: String },

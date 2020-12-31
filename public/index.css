@@ -1,7 +1,6 @@
 .name {
  color: black;
  text-shadow: 1px 2px 2px #567A58;
- padding-top: 60px;
 }
 .title {
   text-align: center;
@@ -13,11 +12,11 @@ p {
 }
 
 /* Image controls */
-#Baker,#Blanca, #Palouse, #Crater {
+#Baker,#Blanca, #Palouse, #Crater, #Diablo, #Mt, #New, #Mount, #Oregon  {
  margin-left: 15px;
  padding: 10px;
 }
-#Blanca, #Crater {
+#Blanca, #Crater, #New, #Mount {
   flex-direction: row-reverse;
 }
 /* .col-md-5 {
@@ -35,7 +34,6 @@ img {
   padding: 10px;
   overflow: hidden;
   margin: 0 auto;
-
 
 }
 .image img  {
