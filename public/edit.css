@@ -4,10 +4,6 @@
   --dupain: rgba(96, 163, 188,.90);
   --offWhite: #f5f5f5;
   --Green: rgba(146, 159,141 ,0.50);
-
-}
-* {
-  font-family: 'Oxygen', sans-serif;
 }
 
 legend {

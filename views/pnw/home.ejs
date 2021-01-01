@@ -7,39 +7,38 @@
     <%- include ('../partials/boot.ejs') %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/main.css">
-
+    <link rel="stylesheet" href="/global.css">
     <title></title>
   </head>
   <body>
       <%- include ('../partials/nav.ejs') %>
 
       <% if (currentUser) { %>
-      <h1>Welcome to Tryon Experiences:  <%= currentUser.username %></h1>
+      <h1 class="welcome">Welcome to Tryon Experiences</h1><h1 class="name"> <%= currentUser.username %></h1>
       <% } else { %>
-      <h1>Welcome to Tryon Experiences</h1>
+      <h1 class="welcome">Welcome to Tryon Experiences</h1>
       <% } %>
 
       <img src="https://lh3.googleusercontent.com/4ICYG5rT3PLdlr5MKTgyr_oLjkLXC_8oHQV-vcFJYxvvMuQ4wRX2hxFDBu17KWrJw6hleVdEHHDO2E6uiotAKFNIgZsqGGAzwBjcrqA8CZlOGfzrnMkp6Bn9EPHO5krg0ykRLctHYG0=w2400" alt="">
 
 
-      <h2>Explore the great PNW and</br> Try On a new Experience</h2>
-      <!-- ==========CODE PIN Picture Frame========== -->
-      <div class="example">
-    <div class="block">
-        <div class="side -main"></div>
-        <div class="side -left"></div>
-    </div>
-    <div class="block">
-        <div class="side -main"></div>
-        <div class="side -left"></div>
-    </div>
-    <div class="block">
-        <div class="side -main"></div>
-        <div class="side -left"></div>
-    </div>
+<!-- ==========CODE PIN Banner========== -->
+
+<div class="picBlock">
+  <h2 class="statement top">Explore the great PNW</h2>
+  <h2 class="statement bottom">Your adventure awaits</h2>
 </div>
+<!-- ==========CODE PIN Banner========== -->
+
+<img Class="lighthouse" src="https://lh3.googleusercontent.com/IAP05KIH86JCYQPGk2mme_wi0hQh7mQreyV-BdHN12Jvn0O0c8kVj2y1yhlLUJ9h5fWHX24KKpL11cS_wXdht2fPuQfgN-gjzSyzS4qOKUHFi9JUa_xPzBfXVlyGY3r6d0vViKp5DF4=w2400" alt="">
+
+
+
 <!-- ==========CODE PIN Social========== -->
-<ul>
+<div class="block3">
+
+
+<ul class"social">
   <li>
     <a href="https://www.facebook.com/banu.tryon">
       <span></span>
@@ -68,6 +67,25 @@
     </a>
   </li>
 </ul>
+
+<!-- ==========CODE PIN Picture Frame========== -->
+
+<div class="example">
+<div class="block">
+  <div class="side -main"></div>
+  <div class="side -left"></div>
+</div>
+<div class="block">
+  <div class="side -main"></div>
+  <div class="side -left"></div>
+</div>
+<div class="block">
+  <div class="side -main"></div>
+  <div class="side -left"></div>
+</div>
+</div>
+</div>
+
 
 
   </body>
