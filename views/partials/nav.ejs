@@ -16,17 +16,18 @@
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
         <% if (currentUser) { %>
+
         <h4>Welcome <%= currentUser.username %></h4>
+        <a class="navlink" href="#">Manage Account</a>
+        <a class="navlink" href="#">Cart</a>
+        <a class="navlink" href="#">Order History</a>
         <a class="navlink" href="/tryon-experiences/new">Create a new Location</a>
         <a class="navlink" href="/tryon-experiences/setup/seed">Seed</a>
-        <form action="/sessions?_method=DELETE" method="POST">
-          <input class="navlink"  type="submit" value="Log Out" class="btn-small red" />
-        </form>
+
         <style>
-        .p-4 { height: 180px; }
+        .p-4 { height: 250px; }
         </style>
         <% } else { %>
-
 
         <style>
         .p-4 { height: 150px; }
@@ -39,9 +40,15 @@
       <div class="container-fluid">
         <a class="navlink" href="/tryon-experiences/home" >⇐</a>
         <a class="navlink" href="/"/>Gallery</a>
-        <a class="navlink" href="/pricing"/>Pricing</a>
+        <a class="navlink" href="tryon-experiences/pricing"/>Pricing</a>
+        <% if (currentUser) { %>
+          <form action="/sessions?_method=DELETE" method="POST">
+            <input class="navlink"  type="submit" value="Log Out" class="btn-small red" />
+          </form>
+          <% } else { %>
         <a class="navlink" href="/users/new">Sign Up</a>
         <a class="navlink" href="/sessions/new">Log In</a>
+        <% } %>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

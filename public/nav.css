@@ -1,4 +1,8 @@
-
+.mainNav {
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 20px;
+}
 .navlink:hover{
   color: lightgreen;
 }
@@ -10,6 +14,10 @@
   padding: 0;
   color: white;
   font-size: 14px;
+  margin: 0 20px;
+}
+.navbar-toggler {
+  margin-right: 20px;
 }
 a {
   width: auto;
@@ -32,8 +40,13 @@ h4 {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navlink {
     font-size: 20px;
+  }
+.p-4 {
+background-size: cover;
+height: 250px;
+width: 100vw;
   }
 }

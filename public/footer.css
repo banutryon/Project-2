@@ -1,0 +1,225 @@
+/* ========Footer============== */
+footer {
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+}
+/* ==============Social============ */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.textSocial {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 10%;
+}
+
+.social {
+  position: relative;
+  display: flex;
+  float: right;
+  margin-right: 25px;
+  top: 40px;
+  transform: rotate(-25deg) skew(25deg);
+  transform-style: preserve-3d;
+}
+
+.social .socialLi {
+  position: relative;
+  list-style: none;
+  width: 15px;
+  height: 15px;
+  margin: 20px 10px;
+}
+
+.social .socialLi::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: #2a2a2a;
+  transform: skewX(-41deg);
+}
+
+.social .socialLi::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: #2a2a2a;
+  transform: skewY(-49deg);
+}
+
+.social .socialLi span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: #2a2a2a;
+  justify-content: center;
+  color: white;
+  font-size: 15px !important;
+}
+
+.social .socialLi:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.social .socialLi:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+
+.social .socialLi:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: .8;
+}
+
+.social .socialLi:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: .6;
+}
+
+.social .socialLi:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: .4;
+}
+
+.social .socialLi:hover span:nth-child(1) {
+  transform: translate(0, 0);
+  opacity: .2;
+}
+
+.social .socialLi:nth-child(1):hover span {
+  background: #1873EA;
+}
+
+.social .socialLi:nth-child(2):hover span {
+  background: #8F3791;
+}
+
+.social .socialLi:nth-child(3):hover span {
+  background: #21567E;
+}
+
+.block3 {
+  background-color: rgba(79, 79, 79, 0.76);
+  height: 330px;
+}
+
+
+.thankYou {
+  font-size: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+.ft1 {
+  margin: 20px 0 10px 55%;
+
+}
+
+.ft2 {
+  margin: -138px 0 10px 10px;
+}
+
+.footerText {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-left: -25px;
+}
+
+.footerText:hover {
+  color: lightgreen;
+}
+
+.li {
+  list-style-type: none;
+}
+
+.p2 {
+  font-style: italic;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.other {
+  font-size: 7px;
+}
+
+.ftH6 {
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+@media (min-width: 900px) {
+
+/* ========footer========= */
+.textSocial {
+
+  margin-left: 20px;
+}
+
+.social {
+  margin-right: 20%;
+  top: 60px;
+}
+
+.social .socialLi {
+  width: 30px;
+  height: 30px;
+  margin: 20px 10px;
+}
+
+.social .socialLi span {
+  font-size: 28px !important;
+}
+
+.thankYou {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.ft1 {
+  margin: 10px 0 10px 45%;
+}
+
+.ft2 {
+  margin: -145px 0 10px 180px;
+}
+
+.footerText {
+  font-size: 16px;
+  margin-left: -15px;
+}
+
+.li {
+  list-style-type: none;
+}
+
+.p2 {
+  margin-left: 10px;
+  font-size: 12px;
+
+}
+
+.other {
+  margin-left: 25px;
+}
+
+.ftH6 {
+  font-size: 20px;
+  margin-left: 5px;
+}
+}

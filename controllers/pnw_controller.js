@@ -27,6 +27,20 @@ pnw.get('/home', (req, res) => {
       currentUser: req.session.currentUser
     })
 })
+// ============Pricing Route==================
+pnw.get('/pricing', isAuthenticated, (req, res) => {
+  res.render(
+    'pnw/pricing.ejs',
+    {currentUser: req.session.currentUser}
+  )
+})
+// ============Checkout Route==================
+pnw.get('/checkout', isAuthenticated, (req, res) => {
+  res.render(
+    'pnw/checkout.ejs',
+    {currentUser: req.session.currentUser}
+  )
+})
 // ============New Route==================
 pnw.get('/new', isAuthenticated, (req, res) => {
   res.render(

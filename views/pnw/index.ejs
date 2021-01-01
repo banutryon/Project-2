@@ -4,9 +4,7 @@
 <head>
 <title>Gallery</title>
   <%- include ('../partials/head.ejs') %>
-
   <%- include ('../partials/boot.ejs') %>
-  <link rel="stylesheet" href="/carousel.css">
   <link rel="stylesheet" href="/index.css">
 
 </head>
@@ -15,7 +13,7 @@
   <%- include ('../partials/nav.ejs') %>
 
   <% if (currentUser) { %>
-  <h1 class="title">Welcome to Tryon Experiences <%= currentUser.username %></h1>
+  <h1 class="title">Welcome to Tryon Experiences </br><%= currentUser.username %></h1>
   <% } else { %>
   <h1 class="title">Welcome to Tryon Experiences %></h1>
   <% } %>
@@ -26,7 +24,8 @@
 
   <div class="row featurette block" id=<%=locations[i].name%>>
     <div class="col-md-7" >
-      <h2 class="featurette-heading name"><%=locations[i].name%></h2>
+      <a class="h2" href="tryon-experiences/<%=locations[i].id %>"><h2 class="featurette-heading name"><%=locations[i].name%></h2></a>
+
       <p><%=locations[i].description%></p>
     </div>
     <div class="col-md-5 image">
@@ -34,6 +33,8 @@
       </div>
   </div>
   <% } %>
+
+  <%- include ('../partials/footer.ejs') %>
 
 </body>
 

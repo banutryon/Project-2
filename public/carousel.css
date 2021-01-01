@@ -3,8 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
@@ -25,7 +23,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 28rem;
+  height: 35rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -85,6 +83,9 @@ body {
     font-size: 1.25rem;
     line-height: 1.4;
   }
+  .carousel-item > img {
+    height: 35rem;
+  }
 
   .featurette-heading {
     font-size: 30px;
@@ -95,5 +96,8 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+  .carousel-item > img {
+    height: 35rem;
   }
 }

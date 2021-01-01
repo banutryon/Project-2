@@ -12,20 +12,27 @@ legend {
 .editPage {
   font-size: 25px;
   width: 80vw;
-  height: 60rem;
-  margin: 10px auto;
-  border-radius: 10px;
+  height: 80rem;
+  margin: 30px auto 5px auto;
+  border: none;
 
 }
 body {
   background-image: url("https://lh3.googleusercontent.com/Z2G_QKBeIFTeDvTUaTJlnGAap69dHgNhFtp_cW99lHb3bX5zj3SGGc3c8u8c68tkdH-NHfGz6lSaWUlLdlP9tMjlSPaRMgaAioFM46qO9GXwz7ByTsfJyqlmFzYWEpRvgYc7t4nUvF8=w2400");
   background-position: center;
+  background-size: cover;
+
+}
+.mainNav {
+  position: fixed;
+  width: 100vw;
 
 }
 .editBox {
   width: 90vw;
-  height: 1300px;
-  margin: 10px auto;
+
+  height: 1800px;
+  margin: 0 auto 10px auto;
   border-radius: 20px;
       box-shadow: 1px 1px 12px var(--offWhite);
                   -1px -1px 12px var(--offWhite);
@@ -34,7 +41,7 @@ body {
 }
 h1 {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 80px;
   color: var(--offWhite);
 }
 p {
@@ -51,19 +58,21 @@ p {
 
 input {
   width: 100%;
-  margin: 8px 0;
+  height: 30px;
+  margin-top: 2px;
   box-sizing: border-box;
   border: 2px solid var(--Green);
-  background-color: var(--Green)
+  background-color: rgba(255, 255,255 ,0.70)
 }
 
 /*========= Edit Text======== */
 textarea {
+font-size: 24px;
 height: 200px;
 width: 100%;
 box-sizing: border-box;
 padding-left: 10px;
-background-color: rgba(146, 159,141 ,0.70)
+background-color: rgba(255, 255,255 ,0.70)
 }
 /*========= Submit Button======== */
 .Submit {
@@ -76,13 +85,13 @@ background-color: rgba(146, 159,141 ,0.70)
 
 /*========= Focus======== */
 
-input:focus {
+.Submit:focus {
   outline: 0;
   border: 2px solid var(--Melon);
 
 }
 
-input[type="submit"] {
+.Submit[type="submit"] {
   height: 50px;
   background: var(--dupain);
   box-shadow: 2px 2px var(--Melon);
@@ -90,7 +99,7 @@ input[type="submit"] {
   border: 0px;
   transition: .2s ease-in-out;
 }
-input[type="submit"]:hover {
+.Submit[type="submit"]:hover {
   cursor: pointer;
   background: var(--Melon);
   box-shadow:2px 2px var(--dupain);
