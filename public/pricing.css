@@ -8,9 +8,7 @@
 .container {
   max-width: 960px;
 }
-* {
-  font-family: Oxygen;
-}
+
 .pricing-header {
   max-width: 700px;
 }
@@ -40,13 +38,4 @@ body {
 }
 .btn-outline-primary:hover .btn:hover .btn-lg:hover {
   color:var(--dupain)
-}
-
-footer {
-  margin-top: 200px;
-}
-@media (min-width: 900px) {
-  footer {
-    margin-top: 260px;
-  }
 }
