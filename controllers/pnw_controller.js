@@ -51,7 +51,7 @@ pnw.get('/new', isAuthenticated, (req, res) => {
 // ============POST New Route==================
 pnw.post('/', (req, res) => {
   PNW.create(req.body, (error, createdLocation) => {
-    res.redirect('/tryon-experiences')
+    res.redirect('/tryon-experiences/new')
   })
 })
 
