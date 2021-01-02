@@ -77,10 +77,14 @@ img {
   }
 }
 
-.bl {
+.video {
   display: block;
   width: 100vw;
   margin: 20px auto 10px auto;
+}
+iframe {
+  width: 100vw;
+  height: 50vw;
 }
 
 
