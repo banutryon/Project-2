@@ -1,23 +1,25 @@
 /* ===========Welcome text */
 .welcome, .name {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 26px;
   letter-spacing: 1px;
   word-spacing: 2px;
   color: rgba(29, 109, 32, 0.85);
   background-color: rgb(255, 255, 255);
   text-shadow: rgba(79, 79, 79, 0.76) 1px 4px 5px;
   text-align: center;
-  padding-bottom: 20px;
 }
+.name {
+  padding-bottom: 20px;
 
+}
 .welcome {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 /* Mountain pic */
 img {
-  margin-top: -130px;
+  margin-top: -90px;
   width: 100vw;
   height: 40%;
 }
@@ -30,7 +32,7 @@ img {
   background: linear-gradient(to bottom, #9BB8D8 0%, #9BB8D8 75%, #FFFFFF 100%);
   margin-top: 20px;
   padding: 70px;
-  height: 250px;
+  height: 200px;
 }
 
 .lighthouse {
@@ -90,6 +92,9 @@ iframe {
 @media (min-width: 900px) {
 
   /* ========header========= */
+
+
+
   .welcome, .name {
     font-size: 40px;
   }

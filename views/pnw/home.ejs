@@ -4,13 +4,13 @@
 
   <head>
     <%- include ('../partials/head.ejs') %>
-    <%- include ('../partials/boot.ejs') %>
+    <%- include ('../partials/nav.ejs') %>
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/global.css">
     <title></title>
   </head>
   <body>
-      <%- include ('../partials/nav.ejs') %>
+
 
       <% if (currentUser) { %>
       <h1 class="welcome">Welcome to Tryon Experiences</h1><h1 class="name"> <%= currentUser.username %></h1>
