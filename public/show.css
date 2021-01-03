@@ -1,14 +1,11 @@
 .map {
   text-align: center;
   cursor: pointer;
-
-
 }
 .map img {
   width: 180px;
   height: 180px;
   margin: 0 15px;
-  cursor: pointer;
   -webkit-box-shadow: 8px 11px 13px 5px rgba(146, 159,141 ,0.79);
   box-shadow: 8px 11px 13px 5px rgba(146, 159,141 ,0.79);
 }
@@ -19,12 +16,13 @@ h2 {
 }
 label {
   width: 500px;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .bottomBox {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
+  padding-left: 20px;
 }
 #description {
   text-align: left;
@@ -68,26 +66,27 @@ p, .headText, .pText, label {
 /* ========Media============== */
 @media (min-width: 900px) {
   .box1 {
-    height: 60vw;
+    margin-top: 30px;
+    height: 40vw;
     width: 100vw;
   }
-
+  .wordBox {
+    height: 250px;
+  }
 
   .map {
-    text-align: center;
     margin-left: 200px;
   }
   .map img {
-    box-shadow: 0px 7px 5px 0px rgba(146, 159,141 ,0.49);
     width: 220px;
     height: 220px;
-    cursor: pointer;
+
   }
   label {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 10px;
     padding-left: 30px;
   }
-
+}
 
 }
