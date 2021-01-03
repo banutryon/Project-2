@@ -19,10 +19,10 @@ footer {
 }
 .resource {
 margin-top: 30px;
-padding-left: 5%;
+padding-left: 5px;
 }
 .lead, .Thank, .resource {
-  margin-left: 5%;
+  margin-left: 5px;
   color: white;
 }
 .container2 {
@@ -49,8 +49,8 @@ li {
 
 .ul {
   position:absolute;
-  top:20%;
-  left:50%;
+  top:25%;
+  left:70%;
   transform: translate(-50%, -50%);
   margin:0;
   padding:0;

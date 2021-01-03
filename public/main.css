@@ -8,10 +8,11 @@
   background-color: rgb(255, 255, 255);
   text-shadow: rgba(79, 79, 79, 0.76) 1px 4px 5px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .welcome {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 /* Mountain pic */
@@ -29,7 +30,7 @@ img {
   background: linear-gradient(to bottom, #9BB8D8 0%, #9BB8D8 75%, #FFFFFF 100%);
   margin-top: 20px;
   padding: 70px;
-  height: 400px;
+  height: 250px;
 }
 
 .lighthouse {
@@ -43,10 +44,7 @@ img {
 @import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
 
 .statement {
-  text-align: center;
-  font-size: 16px;
-  margin-top: spx;
-  margin-left: 20px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 1;
@@ -60,11 +58,12 @@ img {
 }
 
 .top {
-  margin-right: 50px;
-  margin-top: -30px;
+  margin: -35px 0 20px -30px;
 }
 
-.bottom {}
+.bottom {
+  margin-left: -20px;
+}
 
 @keyframes shine {
   0% {
