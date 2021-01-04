@@ -6,7 +6,8 @@
 }
 
 .container {
-  max-width: 960px;
+  margin-top: 30px;
+  max-width: 940px;
 }
 
 .pricing-header {
@@ -17,7 +18,7 @@
 }
 body {
   background-image: url("https://lh3.googleusercontent.com/Z2G_QKBeIFTeDvTUaTJlnGAap69dHgNhFtp_cW99lHb3bX5zj3SGGc3c8u8c68tkdH-NHfGz6lSaWUlLdlP9tMjlSPaRMgaAioFM46qO9GXwz7ByTsfJyqlmFzYWEpRvgYc7t4nUvF8=w2400");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   height: 1650px;
 }
@@ -25,7 +26,7 @@ body {
   color:var(--offWhite)
 }
 .display-4 {
-  padding-top: 100px;
+  padding-top: 10px;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
