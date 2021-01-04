@@ -20,7 +20,7 @@ body {
   background-image: url("https://lh3.googleusercontent.com/Z2G_QKBeIFTeDvTUaTJlnGAap69dHgNhFtp_cW99lHb3bX5zj3SGGc3c8u8c68tkdH-NHfGz6lSaWUlLdlP9tMjlSPaRMgaAioFM46qO9GXwz7ByTsfJyqlmFzYWEpRvgYc7t4nUvF8=w2400");
   background-size: auto;
   background-repeat: no-repeat;
-  height: 1650px;
+
 }
 .lead {
   color:var(--offWhite)
@@ -36,11 +36,19 @@ body {
   text-align: center;
 }
 .card-body, .boxA {
-  background-color: var(--Green)
+  background-color: var(--Green);
 }
 .btn-outline-primary:hover .btn:hover .btn-lg:hover {
-  color:var(--dupain)
+  color:var(--dupain);
 }
 .card-body {
   margin-bottom: 70px;
+}
+/* ========Media============== */
+@media (min-width: 900px) {
+  body {
+      background-size: cover;
+  }
+
+
 }
