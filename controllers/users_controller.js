@@ -4,7 +4,7 @@ const users = express.Router()
 const User = require('../models/users.js')
 
 users.get('/new', (req, res) => {
-  res.render('users/user.ejs', {
+  res.render('sessions/new.ejs', {
     currentUser: req.session.currentuser
   })
 })
@@ -16,7 +16,7 @@ users.post('/', (req, res) => {
   User.create(req.body, (error, createdUser) => {
 
     console.log('user is created', createdUser);
-    res.redirect('/')
+    res.redirect('/sessions/new')
   })
 })
 

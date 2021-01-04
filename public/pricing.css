@@ -17,8 +17,9 @@
 }
 body {
   background-image: url("https://lh3.googleusercontent.com/Z2G_QKBeIFTeDvTUaTJlnGAap69dHgNhFtp_cW99lHb3bX5zj3SGGc3c8u8c68tkdH-NHfGz6lSaWUlLdlP9tMjlSPaRMgaAioFM46qO9GXwz7ByTsfJyqlmFzYWEpRvgYc7t4nUvF8=w2400");
-  background-position: center;
-  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1650px;
 }
 .lead {
   color:var(--offWhite)
@@ -40,5 +41,5 @@ body {
   color:var(--dupain)
 }
 .card-body {
-  margin-bottom: 150px;
+  margin-bottom: 70px;
 }

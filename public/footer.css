@@ -1,15 +1,14 @@
 /* ========Footer============== */
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100vw;
 }
 
 .container1 {
   background-color: rgba(79, 79, 79, 1);
-  height: 180px;
+  height: 280px;
   width: 100vw;
-
 }
 
 .source {
@@ -89,7 +88,7 @@ li {
   display:block;
   background: linear-gradient(0deg, #fff, #ddd);
   border-radius: 50%;
-  line-height: calc(40px - 12px);
+  line-height: calc(45px - 12px);
   font-size:22px;
   color: #262626;
   transition: .5s;
@@ -118,17 +117,10 @@ li {
 
 @media (min-width: 900px) {
   .container1 {
-    height: 160px;
+    height: 260px;
     width: 100%;
   }
-  .ul .li a {
-    padding: 1px;
-    box-sizing: border-box;
-    text-decoration:none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
-    transition: .5s;
-  }
+
   .ul {
     top:30%;
     padding-left: 20%;

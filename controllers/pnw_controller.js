@@ -116,7 +116,7 @@ pnw.get('/setup/seed', (req, res) => {
         hA: `Kayak Adventures`,
          hB: `Drone Videos included in package`,
           hC: `Want to stay longer`,
-      description:'is a lake in northern Washington state in the United States. The lake is situated in the Mount Baker-Snoqualmie National Forest and Baker River valley southwest of North Cascades National Park and is fed by the Baker River along with numerous smaller tributaries. The lake is approximately 10 miles (16 km) north of the town of Concrete, Washington.'
+      description:'Baker Lake is a lake in northern Washington state in the United States. The lake is situated in the Mount Baker-Snoqualmie National Forest and Baker River valley southwest of North Cascades National Park and is fed by the Baker River along with numerous smaller tributaries. The lake is approximately 10 miles (16 km) north of the town of Concrete, Washington.'
     },
     {
       name: 'Blanca Lake',
@@ -132,7 +132,7 @@ pnw.get('/setup/seed', (req, res) => {
         hA: `A Hike to Remember`,
          hB: `Drone Videos included in package`,
           hC: `Take a Swim`,
-      description:'nestles in a basin surrounded by Monte Cristo, Kyes and Columbia peaks, fed by the Columbia Glacier on the northwest end. The glacier’s chilly, silt-filled melt-water creates the lake’s bright turquoise green color'
+      description:'Blanca Lake nestles in a basin surrounded by Monte Cristo, Kyes and Columbia peaks, fed by the Columbia Glacier on the northwest end. The glacier’s chilly, silt-filled melt-water creates the lake’s bright turquoise green color'
     },
     {
       name: 'Palouse Falls',
@@ -149,7 +149,7 @@ pnw.get('/setup/seed', (req, res) => {
          hB: `Drone Videos included in package`,
           hC: `Camp on site`,
 
-      description:'lie on the Palouse River, about 4 mi (6 km) upstream of the confluence with the Snake River in southeast Washington, United States. The falls are 198 ft (60 m) in height. The falls consist of an upper fall with a drop around 20 ft (6.1 m), which lies 1,000 ft (305 m) north-northwest of the main drop, and a lower fall, with a drop of 198 ft (60 m).'
+      description:' Palouse Falls lie on the Palouse River, about 4 mi (6 km) upstream of the confluence with the Snake River in southeast Washington, United States. The falls are 198 ft (60 m) in height. The falls consist of an upper fall with a drop around 20 ft (6.1 m), which lies 1,000 ft (305 m) north-northwest of the main drop, and a lower fall, with a drop of 198 ft (60 m).'
     },
     {
       name: 'Crater Lake',
@@ -166,7 +166,7 @@ pnw.get('/setup/seed', (req, res) => {
          hB: `Reconnect`,
           hC: `Hiking`,
 
-      description:'is a crater lake in south-central Oregon in the western United States. It is the main feature of Crater Lake National Park and is famous for its deep blue color and water clarity. The lake partly fills a nearly 2,148-foot-deep (655 m) caldera that was formed around 7,700 (± 150) years ago by the collapse of the volcano Mount Mazama. There are no rivers flowing into or out of the lake; the evaporation is compensated for by rain and snowfall at a rate such that the total amount of water is replaced every 250 years. With a depth of 1,949 feet (594 m), the lake is the deepest in the United States.'
+      description:'Crater Lake is a crater lake in south-central Oregon in the western United States. It is the main feature of Crater Lake National Park and is famous for its deep blue color and water clarity. The lake partly fills a nearly 2,148-foot-deep (655 m) caldera that was formed around 7,700 (± 150) years ago by the collapse of the volcano Mount Mazama. There are no rivers flowing into or out of the lake; the evaporation is compensated for by rain and snowfall at a rate such that the total amount of water is replaced every 250 years. With a depth of 1,949 feet (594 m), the lake is the deepest in the United States.'
     },
     {
       name: 'Diablo Lake',
@@ -184,7 +184,7 @@ pnw.get('/setup/seed', (req, res) => {
         hB: `Drone Videos included in package`,
         hC: `Camp on site`,
 
-      description:"is a reservoir in the North Cascade mountains of northern Washington state, United States. Created by Diablo Dam, the lake is located between Ross Lake and Gorge Lake on the Skagit River at an elevation of 1,201 feet (366 m) above sea level. Diablo Lake is part of the Skagit River Hydroelectric Project and managed by Seattle City Light. Diablo Lake Trail, designated a National Recreation Trail in 1981, runs for 3.80 miles (6.12 km) along the lake's northern shore."
+      description:"Diablo Lake is a reservoir in the North Cascade mountains of northern Washington state, United States. Created by Diablo Dam, the lake is located between Ross Lake and Gorge Lake on the Skagit River at an elevation of 1,201 feet (366 m) above sea level. Diablo Lake is part of the Skagit River Hydroelectric Project and managed by Seattle City Light. Diablo Lake Trail, designated a National Recreation Trail in 1981, runs for 3.80 miles (6.12 km) along the lake's northern shore."
     },
     {
       name: 'Mount Rainier',
@@ -200,7 +200,7 @@ pnw.get('/setup/seed', (req, res) => {
          hB: `Climbing`,
           hC: `Hiking`,
 
-      description:'also known as Tahoma or Tacoma, is a large active stratovolcano in the Cascade Range of the Pacific Northwest, located in Mount Rainier National Park about 59 miles (95 km) south-southeast of Seattle. With a summit elevation of 14,411 ft (4,392 m), it is the highest mountain in the U.S. state of Washington and the Cascade Range, the most topographically prominent mountain in the contiguous United States, and the tallest in the Cascade Volcanic Arc.'
+      description:'Mount Rainier also known as Tahoma or Tacoma, is a large active stratovolcano in the Cascade Range of the Pacific Northwest, located in Mount Rainier National Park about 59 miles (95 km) south-southeast of Seattle. With a summit elevation of 14,411 ft (4,392 m), it is the highest mountain in the U.S. state of Washington and the Cascade Range, the most topographically prominent mountain in the contiguous United States, and the tallest in the Cascade Volcanic Arc.'
     },
     {
       name: 'New Dungeness Lighthouse',
@@ -216,7 +216,7 @@ pnw.get('/setup/seed', (req, res) => {
          hB: `Pinic on the beach`,
           hC: `Hiking`,
 
-      description:'is a functioning aid to navigation on the Strait of Juan de Fuca, located on the Dungeness Spit in the Dungeness National Wildlife Refuge near Sequim, Clallam County, in the U.S. state of Washington. It has been in continuous operation since 1857, although the current lighthouse tower is 26 feet (7.9 m) shorter than when first constructed.'
+      description:'New Dungeness Lighthouse is a functioning aid to navigation on the Strait of Juan de Fuca, located on the Dungeness Spit in the Dungeness National Wildlife Refuge near Sequim, Clallam County, in the U.S. state of Washington. It has been in continuous operation since 1857, although the current lighthouse tower is 26 feet (7.9 m) shorter than when first constructed.'
     },
     {
       name: 'Mount St. Helens',
@@ -233,7 +233,7 @@ pnw.get('/setup/seed', (req, res) => {
       hB: `Drone Videos included in package`,
       hC: `Cave Exploring`,
 
-      description:'is an active stratovolcano located in Skamania County, Washington, in the Pacific Northwest region of the United States. It is 50 miles (80 km) northeast of Portland, Oregon and 96 miles (154 km) south of Seattle, Washington. Mount St. Helens takes its English name from the British diplomat Lord St Helens, a friend of explorer George Vancouver who made a survey of the area in the late 18th century. The volcano is located in the Cascade Range and is part of the Cascade Volcanic Arc, a segment of the Pacific Ring of Fire that includes over 160 active volcanoes. This volcano is well known for its ash explosions and pyroclastic flows.'
+      description:'Mount St. Helens is an active stratovolcano located in Skamania County, Washington, in the Pacific Northwest region of the United States. It is 50 miles (80 km) northeast of Portland, Oregon and 96 miles (154 km) south of Seattle, Washington. Mount St. Helens takes its English name from the British diplomat Lord St Helens, a friend of explorer George Vancouver who made a survey of the area in the late 18th century. The volcano is located in the Cascade Range and is part of the Cascade Volcanic Arc, a segment of the Pacific Ring of Fire that includes over 160 active volcanoes. This volcano is well known for its ash explosions and pyroclastic flows.'
     },
     {
       name: 'Mt Hood',
@@ -250,7 +250,7 @@ pnw.get('/setup/seed', (req, res) => {
       hB: `Nature Viewing`,
       hC: `Water Activities`,
 
-      description:`is a potentially active stratovolcano in the Cascade Volcanic Arc. It was formed by a subduction zone on the Pacific coast and rests in the Pacific Northwest region of the United States. It is located about 50 miles (80 km) east-southeast of Portland, on the border between Clackamas and Hood River counties. In addition to being Oregon's highest mountain, it is one of the loftiest mountains in the nation based on its prominence, and it offers the only year-round lift-served skiing in North America.`
+      description:`Mt Hood is a potentially active stratovolcano in the Cascade Volcanic Arc. It was formed by a subduction zone on the Pacific coast and rests in the Pacific Northwest region of the United States. It is located about 50 miles (80 km) east-southeast of Portland, on the border between Clackamas and Hood River counties. In addition to being Oregon's highest mountain, it is one of the loftiest mountains in the nation based on its prominence, and it offers the only year-round lift-served skiing in North America.`
     },
     {
       name: 'Oregon Coast',
@@ -267,7 +267,7 @@ pnw.get('/setup/seed', (req, res) => {
       hB: `Hiking`,
       hC: `Haystack Rock`,
 
-      description:'is a city in Clatsop County, Oregon, United States. The population was 1,690 at the 2010 census. Cannon Beach is a popular coastal tourist destination in Oregon, famous for Haystack Rock, a 235 ft (72 m) sea stack that juts out along the Pacific Coast. In 2013, National Geographic listed Cannon Beach as "one of the world’s 100 most beautiful places."'
+      description:'Cannon Beach is a city in Clatsop County, Oregon, United States. The population was 1,690 at the 2010 census. Cannon Beach is a popular coastal tourist destination in Oregon, famous for Haystack Rock, a 235 ft (72 m) sea stack that juts out along the Pacific Coast. In 2013, National Geographic listed Cannon Beach as "one of the world’s 100 most beautiful places."'
     },
 
   ],
