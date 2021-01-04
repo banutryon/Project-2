@@ -20,7 +20,7 @@ a {
 .form-structor {
   background-color: #222;
   border-radius: 15px;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   position: relative;
   overflow: hidden;
@@ -70,8 +70,7 @@ a {
   color: #fff;
   font-size: 2em;
   text-align: center;
-  display: block;
-  margin: 0 auto 0 auto;
+
 }
 .form-structor .signup .form-title span {
   color: rgba(0, 0, 0, 0.4);
