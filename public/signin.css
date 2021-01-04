@@ -11,12 +11,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+
 
 .form-structor {
   background-color: #222;
   border-radius: 15px;
-  height: 550px;
-  width: 350px;
+  height: 100vh;
+  width: 100vw;
   position: relative;
   overflow: hidden;
 }
@@ -30,7 +35,7 @@ body {
   left: 0;
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 700px;
+  background-size: cover;
   background-image: url("https://lh3.googleusercontent.com/yD1Uu2ncet06865FqtAii_a4JvWzRlSdHHHbKCCzF_u83nQ9vrFYxnUH5AUa4vLrU50YYBkmddDw4B4zp-qX41fkoIbILGjg7KeQMLzJLBXgi1KUoHQBtRqW1UA6GIzf_STkp-jG9_w=w2400");
 }
 .form-structor .signup {
@@ -63,8 +68,10 @@ body {
 }
 .form-structor .signup .form-title {
   color: #fff;
-  font-size: 1.7em;
+  font-size: 2em;
   text-align: center;
+  display: block;
+  margin: 0 auto 0 auto;
 }
 .form-structor .signup .form-title span {
   color: rgba(0, 0, 0, 0.4);
@@ -239,7 +246,13 @@ body {
 }
 
 
+@media (min-width: 900px) {
 
+.form-structor {
+  height: 90vh;
+  width: 35vw;
+}
+}
 
 
 

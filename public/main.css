@@ -10,7 +10,7 @@
   text-align: center;
 }
 .name {
-  padding-bottom: 20px;
+  margin-bottom: 10px;
 
 }
 .welcome {
@@ -19,7 +19,7 @@
 
 /* Mountain pic */
 img {
-  margin-top: -90px;
+  margin-top: -60px;
   width: 100vw;
   height: 40%;
 }
