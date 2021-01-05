@@ -58,8 +58,9 @@
         <input type="date" name="dateof" id="dateof">
       </div>
       <div class="col-md-5">
-        <label for="country" class="form-label">Headcount</label>
-        <select class="form-select" id="country" required>
+        <form>
+        <label for="headcount" class="form-label">Headcount</label>
+        <select class="form-select" id="headcount" required>
           <option value="">Choose...</option>
           <option>1</option>
           <option>2</option>
@@ -72,13 +73,15 @@
           <option>9</option>
           <option>10</option>
         </select>
+        <input type="button" onClick="multiplyBy()" Value="Submit" />
+        
         <div class="invalid-feedback">
           Please select a valid country.
         </div>
       </div>
       <div class="col-md-5">
-        <label for="country" class="form-label">Locations</label>
-        <select class="form-select" id="country" required>
+        <label for="location" class="form-label">Locations</label>
+        <select class="form-select" id="location" required>
           <option value="">Choose...</option>
           <option>Blanka Lake</option>
           <option>Baker Lake</option>
@@ -94,6 +97,14 @@
         </div>
       </div>
       </div>
+</form>
+      <script type="text/javascript">
+        function MutilplyBy() {
+          headCount = $('headcount').value;
+          $('result').innerHTML = headCount * 49;
+        }
+      </script>
+
 <!-- Billing addresses/ your cart -->
       <div class="row g-3">
         <div class="col-md-5 col-lg-4 order-md-last">
@@ -107,14 +118,14 @@
                 <h6 class="my-0">Hiking trip</h6>
                 <small class="text-muted">3 to 6 hour hiking experience</small>
               </div>
-              <span class="text-muted">$129</span>
+              <p>$<span id = "result"></span></p>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
                 <h6 class="my-0">Drone footage</h6>
                 <small class="text-muted">15 minute video of your hike</small>
               </div>
-              <span class="text-muted">$Free</span>
+              <span class="text-muted">Free</span>
             </li>
             <li class="list-group-item d-flex justify-content-between bg-light">
               <div class="text-success">
