@@ -1,106 +1,108 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <%- include ('../partials/head.ejs') %>
 
-      <title></title>
+<head>
+  <%- include ('../partials/head.ejs') %>
 
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title></title>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    }
+  </style>
 
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="/pricing.css">
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/main.css">
+  <!-- Custom styles for this template -->
+
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/pricing.css">
+
+</head>
+
+<body>
+  <%- include ('../partials/nav.ejs') %>
+
+  <main class="container">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Pricing</h1>
+      <p class="lead">Three Easy Choices for You to Start Adventuring Now</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 
 
-  </head>
-  <body>
-    <%- include ('../partials/nav.ejs') %>
-
-<main class="container">
-  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Pricing</h1>
-    <p class="lead">Three Easy Choices for You to Start Adventuring Now</p>
-  </div>
-
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-
-
-    <div class="col">
-      <div class=" mb-4 shadow-sm boxA">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">A Hike to Remember</h4>
+      <div class="col">
+        <div class=" mb-4 shadow-sm boxA">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal">A Hike to Remember</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$49 per person </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Hikes range from 2 to 6 hours</li>
+              <li>15 min drone video included</li>
+              <li>Lunch included</li>
+              <li>Trail maps provided</li>
+            </ul>
+            <a href="/tryon-experiences/checkoutHike">
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Reserve now</button></a>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$49 </h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Hikes range from 2 to 6 hours</li>
-          <li>15 min drone video included</li>
-          <li>Lunch included</li>
-          <li>Trail maps provided</li>
-        </ul>
-        <a href="/tryon-experiences/checkout">
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Reserve now</button></a>
+      <div class="col">
+        <div class=" mb-4 shadow-sm boxA">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal">Camping</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$69 per night</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>2 night camping included</li>
+              <li>We provide tents and firewood</li>
+              <li>We set up and tear down the tents for you</li>
+              <li>Smores included</li>
+            </ul>
+            <a href="/tryon-experiences/checkoutCamp"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Reserve now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class=" mb-4 shadow-sm boxA">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal"> Kayak Adventure</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$129 each</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>6 to 7 hour kayaking</li>
+              <li>15 min drone video included</li>
+              <li>Lunch included</li>
+              <li>2 night camping add $59</li>
+            </ul>
+            <a href="/tryon-experiences/checkoutKayak"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Reserve now</button></a>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-    <div class="col">
-      <div class=" mb-4 shadow-sm boxA">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Camping</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$99</h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>2 night camping included</li>
-          <li>We provide tents and firewood</li>
-          <li>We set up and tear down the tents for you</li>
-          <li>Smores included</li>
-        </ul>
-        <a href="/tryon-experiences/checkout"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Reserve now</button></a>
-      </div>
-    </div>
-    </div>
-    <div class="col">
-      <div class=" mb-4 shadow-sm boxA">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal"> Kayak Adventure</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$129 </h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>6 to 7 hour kayaking</li>
-          <li>15 min drone video included</li>
-          <li>Lunch included</li>
-          <li>2 night camping add $59</li>
-        </ul>
-        <a href="/tryon-experiences/checkout"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Reserve now</button></a>
-      </div>
-    </div>
-  </div>
-  </div>
-</main>
-<footer>
-<%- include ('../partials/footer.ejs') %>
-</footer>
+  </main>
+  <footer>
+    <%- include ('../partials/footer.ejs') %>
+  </footer>
 
 </body>
 

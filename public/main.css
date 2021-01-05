@@ -93,15 +93,19 @@ iframe {
 
   /* ========header========= */
 
-
-
   .welcome, .name {
     font-size: 40px;
   }
   .name {
     margin-bottom: 40px;
   }
-
+  .welcome {
+    padding-top: 40px;
+  }
+  /* Mountain pic */
+  img {
+    margin-top: -100px;
+  }
   /* ========Drone Video========= */
   .bl {
     margin-top: 40px;
@@ -109,7 +113,7 @@ iframe {
 
   /* ========lighthouse========= */
   .statement {
-    font-size: 280%;
+    font-size: 180%;
     margin-left: 30px;
   }
 
@@ -132,5 +136,5 @@ iframe {
   .lighthouse {
     margin-top: -380px;
     margin-bottom: 40px;
-    height: 900px;
+    height: 600px;
   }

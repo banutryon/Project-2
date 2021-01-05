@@ -35,10 +35,24 @@ pnw.get('/pricing', isAuthenticated, (req, res) => {
   )
 })
 
-// ============Checkout Route==================
-pnw.get('/checkout', isAuthenticated, (req, res) => {
+// ============Checkout Hike Route==================
+pnw.get('/checkoutHike', isAuthenticated, (req, res) => {
   res.render(
     'pnw/checkout.ejs',
+    {currentUser: req.session.currentUser}
+  )
+})
+// =========Checkout Camping Route==================
+pnw.get('/checkoutCamp', isAuthenticated, (req, res) => {
+  res.render(
+    'pnw/checkout2.ejs',
+    {currentUser: req.session.currentUser}
+  )
+})
+// ============Checkout Kayak Route==================
+pnw.get('/checkoutKayak', isAuthenticated, (req, res) => {
+  res.render(
+    'pnw/checkout3.ejs',
     {currentUser: req.session.currentUser}
   )
 })

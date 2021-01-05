@@ -16,8 +16,10 @@
 .my-0 {
   color: var(--offWhite);
 }
+
 body {
   background-image: url("https://lh3.googleusercontent.com/Z2G_QKBeIFTeDvTUaTJlnGAap69dHgNhFtp_cW99lHb3bX5zj3SGGc3c8u8c68tkdH-NHfGz6lSaWUlLdlP9tMjlSPaRMgaAioFM46qO9GXwz7ByTsfJyqlmFzYWEpRvgYc7t4nUvF8=w2400");
+  background: linear-gradient( rgba(128,128,128,0.49));
   background-size: auto;
   background-repeat: no-repeat;
 

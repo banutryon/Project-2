@@ -3,11 +3,15 @@ footer {
   position: relative;
   bottom: 0;
   width: 100vw;
+  height: 60px;
 }
-
+.thank {
+  font-size: 10px;
+  margin-top: -10px;
+}
 .container1 {
   background-color: rgba(79, 79, 79, 1);
-  height: 160px;
+  height: 120px;
   width: 100vw;
   margin-bottom: 1px;
 }
@@ -16,16 +20,14 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 12px;
-
 }
 .resource {
-margin: 20px auto 10px 20px;
+margin: 0 auto 2px 20px;
 color: white;
 }
 
 .container2 {
   margin: 0 5%;
-
 }
 
 .flexbox {
@@ -36,10 +38,8 @@ color: white;
 }
 .feel {
   color: white;
-  padding: 10px 20px;
+  padding: 5px 20px;
   width: 320px;
-
-
 }
 
 .source:hover {
@@ -52,7 +52,7 @@ li {
 
 .ul {
   position:absolute;
-  top:12%;
+  top:90%;
   left:75%;
   transform: translate(-50%, -50%);
   margin:0;
@@ -67,8 +67,8 @@ li {
 
 .ul .li a {
   position: relative;
-  width:50px;
-  height:50px;
+  width:30px;
+  height:30px;
   display:block;
   text-align:center;
   margin:0 10px;
@@ -87,13 +87,13 @@ li {
 }
 
 .ul .li a .fab {
-  widht: 100%;
+  width: 100%;
   height:100%;
   display:block;
   background: linear-gradient(0deg, #fff, #ddd);
   border-radius: 50%;
-  line-height: calc(55px - 12px);
-  font-size:28px;
+  line-height: calc(38px - 12px);
+  font-size:20px;
   color: #262626;
   transition: .5s;
 }
@@ -124,10 +124,23 @@ li {
     height: 200px;
     width: 100%;
   }
-
+  .thank {
+    font-size: 14px;
+    margin-top: -5px;
+  }
   .ul {
-    top:15%;
+    top:120%;
     left:55%;
+  }
+  .ul .li a {
+
+    width:50px;
+    height:50px;
+  }
+  .ul .li a .fab {
+    line-height: calc(55px - 12px);
+    font-size:28px;
+
   }
   .flexbox {
     margin: 10px 15% 0 15%;
