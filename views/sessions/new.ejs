@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <%- include ('../partials/head.ejs') %>
+
     <%- include ('../partials/user_session.ejs') %>
   </head>
   <body class="text-center">
@@ -14,7 +16,7 @@
 		</div>
 		<button class="submit-btn">Log in</button>
 
-    <button class="submit-btn"><a  href="/tryon-experiences">Cancel</a></button>
+    <button class="submit-btn"><a  href="/tryon-experiences/home">Cancel</a></button>
 	</div>
 </form>
 <form action="/users" method="POST">

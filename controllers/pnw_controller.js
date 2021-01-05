@@ -34,6 +34,7 @@ pnw.get('/pricing', isAuthenticated, (req, res) => {
     {currentUser: req.session.currentUser}
   )
 })
+
 // ============Checkout Route==================
 pnw.get('/checkout', isAuthenticated, (req, res) => {
   res.render(
