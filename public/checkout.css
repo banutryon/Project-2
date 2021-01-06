@@ -1,3 +1,11 @@
+:root {
+  --Melon: rgba(248, 194, 145,.90);
+  --dupain: rgba(96, 163, 188,.90);
+  --offWhite: #f5f5f5;
+  --Green: rgba(146, 159,141 ,0.50);
+}
+
+
 .container {
   max-width: 960px;
 }
@@ -18,4 +26,61 @@ input {
 .datepicker {
   text-align: center;
   margin-bottom: 40px;
+}
+
+.picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.box {
+  margin: 10px;
+  text-align: center;
+}
+.form-select {
+  width: 200px;
+  margin-left: 60px;
+  align-self: auto;
+}
+.count {
+  width: 50px;
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  input {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+  }
+  .mb-3 {
+    color: black;
+  }
+  .datepicker {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .picker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .box {
+    margin: 10px;
+    text-align: center;
+  }
+  .form-select {
+    width: 200px;
+    margin-left: 60px;
+    align-self: auto;
+  }
+  .count {
+    width: 50px;
+  }
 }

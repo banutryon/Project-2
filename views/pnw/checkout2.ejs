@@ -46,16 +46,52 @@
   <div class="container">
     <main>
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://lh3.googleusercontent.com/1I5WccQ_Kmz6nc311r00lrvHlxiPDNhbOZLDtSMxQFbapTD2BnRLih7v9g7OLswleuYC0gDpWpGo5rC6UePZ621vb2zxFPZeYXAep_L2mxA7f9pIl6IlvXfmUsDzcH955ZJgkl0uxZk=w2400" alt="" width="200"
+        <img class="d-block mx-auto mb-4" src="https://lh3.googleusercontent.com/BRayP95m6gnRTaExsQV2MbKXiTXF8f_89QB8dhWR5GG-E8OmqeOWTT9eQtjzo6oM1kQBYW0fnmhWas3miBgl4xRUvaKolZrvU6sLCXEGxsJLVfUKh2nllmYItuF4VpjxHfiTMHegXq0=w2400" alt="" width="200"
           height="200">
         <h2>Camping Getaway Checkout</h2>
         <p class="lead">Please do not fill out this is only for demo purposes. </p>
       </div>
-      <div class="datepicker">
-        <h1>Choose your date</h1>
-        <label for="dateof">Reserve Date</label>
-        <input type="date" name="dateof" id="dateof">
+      <div class="picker">
+        <div class="datepicker">
+          <h1>Choose your date</h1>
+          <label for="dateof">Reserve Date</label>
+          <input type="date" name="dateof" id="dateof">
+        </div>
+        <div class="col-md-5">
+
+          <form>
+            <label for="headcount" class="form-label">Headcount</label>
+            <input type="text" id="headcount"/>
+
+            <input type="button" onClick="multiplyBy();addBy()" Value="Submit" />
+              </form>
+
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+        </div>
+        <div class="col-md-5">
+          <label for="location" class="form-label">Locations</label>
+          <select class="form-select" id="location" required>
+            <option value="">Choose...</option>
+            <option>Blanka Lake</option>
+            <option>Baker Lake</option>
+            <option>Crater Lake</option>
+            <option>Mt hood</option>
+            <option>Mt Rainier</option>
+            <option>Mt St Helens</option>
+            <option>New Dungeness Lighthouse</option>
+            <option>Oregon Coast</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
       </div>
+
+
+
+      <!-- ======== your cart ========-->
       <div class="row g-3">
         <div class="col-md-5 col-lg-4 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -65,28 +101,32 @@
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 class="my-0">Kayak Adventure</h6>
-                <small class="text-muted">6 hour kayak experience</small>
+                <h6 class="my-0">Camping trip</h6>
+                <small class="text-muted">2 night stay set up and tents provided</small>
               </div>
-              <span class="text-muted">$129</span>
+              <p>$
+                <span id="result"></span>
+              </p>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 class="my-0">Camping add on</h6>
-                <small class="text-muted">2 night camping trip</small>
+                <h6 class="my-0">Smores/ firewood</h6>
+                <small class="text-muted">Included</small>
               </div>
-              <span class="text-muted">$59</span>
+              <span class="text-muted">Free</span>
             </li>
             <li class="list-group-item d-flex justify-content-between bg-light">
               <div class="text-success">
                 <h6 class="my-0">Promo code</h6>
-                <small>TryonDeals</small>
+                <small>TryonCamping</small>
               </div>
-              <span class="text-success">−$10</span>
+              <span class="text-success">−$15</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>Total (USD)</span>
-              <strong>$178</strong>
+              <p>$
+                <span id="total"></span>
+              </p>
             </li>
           </ul>
 
@@ -99,6 +139,8 @@
             <a class="w-100 btn btn-primary btn-lg" href="/tryon-experiences/home">Cancel</a>
           </form>
         </div>
+
+        <!-- =====Billing addresses====== -->
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Billing address</h4>
           <form class="needs-validation" novalidate>
@@ -237,7 +279,7 @@
               <input type="checkbox" class="form-check-input" id="save-info">
               <label class="form-check-label" for="save-info">Save this information for next time</label>
             </div>
-
+<!--=========Payment================= -->
             <hr class="my-4">
 
             <h4 class="mb-3">Payment</h4>
@@ -299,7 +341,7 @@
         </div>
       </div>
     </main>
-
+<!-- ==========Footer==================== -->
     <footer class="my-5 pt-5 text-muted text-center text-small">
       <p class="mb-1">&copy; 1983–2020 Tryon Experiences</p>
       <ul class="list-inline">
@@ -310,10 +352,17 @@
     </footer>
   </div>
 
-
+<!-- =========Script============ -->
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    function multiplyBy() {
+      const cost = 69
+      headcount = document.getElementById("headcount").value;
+      document.getElementById("result").innerHTML = headcount * cost;
+      document.getElementById("total").innerHTML = headcount * cost - 15;
+    }
+  </script>
 
-  <script src="form-validation.js"></script>
 </body>
 
 </html>
