@@ -2,7 +2,7 @@
   --Melon: rgba(248, 194, 145,.90);
   --dupain: rgba(96, 163, 188,.90);
   --offWhite: #f5f5f5;
-  --Green: rgba(146, 159,141 ,0.50);
+  --Green: rgba(146, 159,141 ,0.70);
 }
 
 .container {
@@ -34,14 +34,20 @@ body {
   letter-spacing: 1px;
   word-spacing: 2px;
   color: var(--offWhite);
-  text-shadow: rgba(79, 79, 79, 0.76) 1px 4px 5px;
+  text-shadow: rgba(79, 79, 79, 0.86) 1px 4px 5px;
   text-align: center;
 }
 .card-body, .boxA {
   background-color: var(--Green);
 }
-.btn-outline-primary:hover .btn:hover .btn-lg:hover {
-  color:var(--dupain);
+.btn-outline {
+color: var(--dupain) !important;
+border-color: var(--Melon) !important;
+}
+.btn-outline:hover {
+  color: var(--Melon) !important;
+  background-color: var(--dupain);
+  border-color: var(--dupain) !important;
 }
 .card-body {
   margin-bottom: 70px;

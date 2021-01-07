@@ -1,4 +1,11 @@
 /* ========Footer============== */
+:root {
+  --Melon: rgba(248, 194, 145,.90);
+  --dupain: rgba(96, 163, 188,1);
+  --offWhite: #f5f5f5;
+  --Green: rgba(58, 96,68 ,0.60);
+  --lightGreen: lightgreen;
+}
 footer {
   position: relative;
   bottom: 0;
@@ -10,7 +17,7 @@ footer {
   margin-top: -10px;
 }
 .container1 {
-  background-color: rgba(79, 79, 79, 1);
+  background-color: var(--dupain);
   height: 120px;
   width: 100vw;
   margin-bottom: 1px;
@@ -43,7 +50,7 @@ color: white;
 }
 
 .source:hover {
-  color: lightgreen;
+  color: var(--Melon);
 }
 
 li {

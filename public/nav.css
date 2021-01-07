@@ -25,25 +25,31 @@
   padding: 0;
   color: Black;
   font-size: 14px;
-  margin: -15px 12px 0 12px;
+  margin: -35px 12px 0 12px;
 }
 .log {
-  padding-bottom: 15px;
+  margin-bottom: 26px;
 }
 .navlink1 {
   color: white;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   cursor: pointer;
   border: none;
   padding: 0;
 }
+.navlink1:hover {
+  color:var(--Melon)
+}
 .logo {
   height: 120px;
   width: 120px;
+
 }
 .navbar-toggler {
   margin-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 a {
