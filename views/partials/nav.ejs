@@ -39,6 +39,9 @@
         <% if (currentUser) { %>
           <form action="/sessions?_method=DELETE" method="POST">
             <input class="navlink log"  type="submit" value="Log Out" class="btn-small red" />
+            <style media="screen">
+              .log { margin-bottom: 36px}
+            </style>
           </form>
           <% } else { %>
         <a class="navlink log" href="/sessions/new">Log in/Sign up</a>
