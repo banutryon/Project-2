@@ -84,12 +84,14 @@ height: 250px;
 width: 100vw;
   }
   .log {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
   .logo {
     height: 120px;
     width: 120px;
-
+  }
+  .navlink {
+    margin: -20px 10px 0 -2px;
   }
 
 }
