@@ -18,7 +18,7 @@
         <a class="navlink1" href="#">Cart</a>
         <a class="navlink1" href="#">Order History</a>
         <a class="navlink1" href="/tryon-experiences/new">Create a new Location</a>
-        <a class="navlink1" href="/tryon-experiences/setup/seed">Seed</a>
+        
 
         <style>
         .p-4 { height: 250px; }
@@ -34,17 +34,17 @@
     </div>
     <nav class="navbar navbar-dark navvy">
       <div class="container-fluid">
-        <img class="logo navlink" src="https://lh3.googleusercontent.com/v1wt-JG4aQGi4-pAU8BBZBRlkjuMvasdo3nxKaK--cOhSMmAsmtvNpHmBg8x449l7UwagywZWSVjtOK6L5w6Jrzpu32qqeX392W6Lifk18uiD2PnqQidGNWkNxQ3hZlNa_Vme9NbkqA=s200-p-k" alt="">
+        <a class="navlink" href="/tryon-experiences/home" ><img class="logo navlink" src="https://lh3.googleusercontent.com/v1wt-JG4aQGi4-pAU8BBZBRlkjuMvasdo3nxKaK--cOhSMmAsmtvNpHmBg8x449l7UwagywZWSVjtOK6L5w6Jrzpu32qqeX392W6Lifk18uiD2PnqQidGNWkNxQ3hZlNa_Vme9NbkqA=s200-p-k" alt=""></a>
 
-        <a class="navlink" href="/tryon-experiences/home" >Home</a>
+
         <a class="navlink" href="/"/>Locations</a>
         <a class="navlink" href="/tryon-experiences/pricing"/>Pricing</a>
         <% if (currentUser) { %>
           <form action="/sessions?_method=DELETE" method="POST">
-            <input class="navlink"  type="submit" value="Log Out" class="btn-small red" />
+            <input class="navlink log"  type="submit" value="Log Out" class="btn-small red" />
           </form>
           <% } else { %>
-        <a class="navlink" href="/sessions/new">Log in/Sign up</a>
+        <a class="navlink log" href="/sessions/new">Log in/Sign up</a>
 
         <% } %>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
