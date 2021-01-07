@@ -25,10 +25,10 @@
   padding: 0;
   color: Black;
   font-size: 14px;
-  margin: -35px 12px 0 12px;
+  margin: -35px 12px 0 -2px;
 }
 .log {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 .navlink1 {
   color: white;
