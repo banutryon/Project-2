@@ -13,12 +13,7 @@
 <nav>
     <%- include ('../partials/nav.ejs') %>
 </nav>
-  <% if (currentUser) { %>
-  <h1 class="title">Welcome to Tryon Experiences </br><%= currentUser.username %></h1>
-  <% } else { %>
-  <h1 class="title">Welcome to Tryon Experiences %></h1>
-  <% } %>
-
+  <img class="ocean" src="/Imgs/sky.jpg" alt="">
   <!-- START THE FEATURETTES -->
   <% for(let i = 0; i < locations.length; i++) { %>
   <hr class="featurette-divider">

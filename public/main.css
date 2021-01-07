@@ -1,25 +1,8 @@
 /* ===========Welcome text */
-.welcome, .name {
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  color: rgba(29, 109, 32, 0.85);
-  background-color: rgb(255, 255, 255);
-  text-shadow: rgba(79, 79, 79, 0.76) 1px 4px 5px;
-  text-align: center;
-}
-.name {
-  margin-bottom: 10px;
-
-}
-.welcome {
-  padding-top: 20px;
-}
 
 /* Mountain pic */
 img {
-  margin-top: -60px;
+
   width: 100vw;
   height: 40%;
 }

@@ -202,7 +202,7 @@ pnw.get('/setup/seed', (req, res) => {
       description:"Diablo Lake is a reservoir in the North Cascade mountains of northern Washington state, United States. Created by Diablo Dam, the lake is located between Ross Lake and Gorge Lake on the Skagit River at an elevation of 1,201 feet (366 m) above sea level. Diablo Lake is part of the Skagit River Hydroelectric Project and managed by Seattle City Light. Diablo Lake Trail, designated a National Recreation Trail in 1981, runs for 3.80 miles (6.12 km) along the lake's northern shore."
     },
     {
-      name: 'Mount Rainier',
+      name: 'Mt Rainier',
       imgA: 'https://lh3.googleusercontent.com/Ickq-OxHhf6lX4Xg-BfQthg_A5Y99r3TaIFAbaQUoPk9wdX3Q0uv4nbhuokEyiK7tGsmFhYuGzZwcfthr7tstlDPAEdGUNtmFkLy6dNb5hD5Ez9Qyq656UYbL_seT9Z-2y-9L6jUZ-4=w2400',
       imgB: 'https://lh3.googleusercontent.com/FDuJ8autA4e5ZaG8tsGNJaOQtdEJiovgw6rgBvnSePcy-JbJY3Qfb-xUmWg5FuLAySlzOvIMz3dCDSG2p1e4EdR60MLbMime9P_xrLuPoGWHmavEuEgsNl4Epv1WOvcwA0x8F5jmXwU=w2400',
       imgC: 'https://lh3.googleusercontent.com/dMw4DylfnfOpbHobFrQen7NgR-c34yhlQMi6jsAFuzJrRKbaJNZX4eykgOCyGgzcWHQggvF5tejc6rRCOu44g0lIXzZR7_PEXFV15FCS7CwQyVYBRFB6j-joIRhx1-wewPATY_XrGj0=w2400',
@@ -234,7 +234,7 @@ pnw.get('/setup/seed', (req, res) => {
       description:'New Dungeness Lighthouse is a functioning aid to navigation on the Strait of Juan de Fuca, located on the Dungeness Spit in the Dungeness National Wildlife Refuge near Sequim, Clallam County, in the U.S. state of Washington. It has been in continuous operation since 1857, although the current lighthouse tower is 26 feet (7.9 m) shorter than when first constructed.'
     },
     {
-      name: 'Mount St. Helens',
+      name: 'Mt St. Helens',
       imgA: 'https://lh3.googleusercontent.com/25QqZ0JrbNCHrMvTvRssYiw8dlE6xo3G-XOSZUI1jd3jE2KsxAfm8nqrcmPepMX3RybJJ9wj-9mfBJCK1vF61hL7e6uAcbjA4H2_vpyuOzGkXht0XH5L1GBop0ojgSB4jhnXxixuWLM=w2400',
       imgB: 'https://lh3.googleusercontent.com/PJO6eUO3QQ3J6LttmtCCfIrn7NJIZmepk0-AUo8dPMahh9rPpoD5QGURi9b66DEn1GTm-nPjtO7thMEZzTPywqrK-U3AASN-Alhf6R-Nlc4DJTzOjSr3iGp609HQ7IpkjGgkstgU0fY=w2400',
       imgC: 'https://lh3.googleusercontent.com/EvGhBdqXBGw7ttPqEY2sCAHyj1ZUyJ90S77zkDfP9fTeyfpwpz8tjoYhQ9Ecy7IlRYm1R4qQx8Fhzeo7xDRRCnCQTJOzDHKCq8mrW-eJotUv8vmKWM7VJ_0ohl5U-W8woqMLSTJ-IPo=w2400',

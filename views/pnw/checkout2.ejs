@@ -52,25 +52,21 @@
         <p class="lead">Please do not fill out this is only for demo purposes. </p>
       </div>
       <div class="picker">
-        <div class="datepicker">
-          <h1>Choose your date</h1>
+        <div class="datepicker box">
+          <label for="headcount" class="form-label"></label>
           <label for="dateof">Reserve Date</label>
           <input type="date" name="dateof" id="dateof">
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 box">
 
           <form>
-            <label for="headcount" class="form-label">Headcount</label>
-            <input type="text" id="headcount"/>
+            <label for="headcount" class="form-label" ></label>
+            <input class="count" placeholder="Headcount" type="text" id="headcount"/>
 
-            <input type="button" onClick="multiplyBy();addBy()" Value="Submit" />
+            <input class="count" type="button" onClick="multiplyBy();addBy()" Value="Submit" />
               </form>
-
-            <div class="invalid-feedback">
-              Please select a valid country.
-            </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 box">
           <label for="location" class="form-label">Locations</label>
           <select class="form-select" id="location" required>
             <option value="">Choose...</option>
